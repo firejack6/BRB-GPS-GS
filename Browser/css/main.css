@@ -27,6 +27,7 @@
   width: 15vw;
   text-align: center;
   line-height: 1em;
+  font-size: 1.25vh;
 }
 
 #compassContainer{
@@ -40,8 +41,33 @@
   width: 20%;
   background-color: grey;
   border: 1px solid black;
+  text-align: center;
 }
 
-#heading{
-  text-align: center;
+#FFL{
+  text-align: left;
+}
+
+#FFR{
+  text-align: right;
+}
+
+#FL{
+  text-align: left;
+}
+
+#FR{
+  text-align: right;
+}
+
+#CL{
+  text-align: left;
+}
+
+#CR{
+  text-align: right;
+}
+
+.green{
+  background-color: green;
 }
