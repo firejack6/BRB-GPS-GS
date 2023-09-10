@@ -1,2 +1,6 @@
 __pycache__/**/*
 Browser/node_modules/**/
+Python/__pycache__/**/*
+Python/__pycache__/aprs.cpython-311.pyc
+Python/__pycache__/pyserver.cpython-311.pyc
+Python/tempCodeRunnerFile.py

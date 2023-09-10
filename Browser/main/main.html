@@ -11,11 +11,28 @@
     </head>
 
     <body>
+        <div id="buttons">
+            <button id="clearData">CLEAR DATA</button>
+            <button id="settings">SETTINGS</button>
+            <button id="startCompass">ENABLE COMPASS</button>
+        </div>
+        <div class="compass">
+            <div class="arrow"></div>
+            <div class="compass-circle"></div>
+            <div class="my-point"></div>
+          </div>
+          <button class="start-btn">Start compass</button>
+
         <h1>APRS Map</h1>
-        <button id="clearData">CLEAR DATA</button>
-        <div id="map"></div>
+        <div id="map" class="hidden"></div>
+        <div id="settingsFrame" class="hidden">
+            <label for="ip">SERVER IP ADDRESS</label>
+            <input type="text" id="ip" name="ip" value="">
+
+            <button id="submit">SUBMIT</button>
+        </div>
     </body>
-    <script src="main.js" type="text/javascript"></script>
+    <script src="main.js" type="module"></script>
     <script src="../Maps/mapping.js" type="module"> </script>
     <script src="../compass/heading.js" type="module"> </script>
 </html>

@@ -29,6 +29,11 @@ var zippyIcon = L.icon({
     iconSize: [30, 50],
 });
 
+var dotIcon = L.icon({
+    iconUrl: '../Maps/icons/reddot.webp',
+    iconSize: [10, 10],
+});
+
 //add image overlays
 var FARZ13 = L.imageOverlay('../Maps/satellite/FAR.Z13.png', [[35.209721, -117.641601],[35.46067, -118.037109]],{
     opacity: 0.5
@@ -110,6 +115,28 @@ export function appendMarker(d){
         marker.bindPopup(`<p> ${data.timestamp} </p>`)
             .openPopup();
         oldData = d;
+    }   
+}
+
+setInterval(getDeviceLocation,5000);
+function getDeviceLocation(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(plotPosition);
+    }else{
+        alert("Geolocation is not supported by this browser.");
     }
-    
+}
+
+let firstDevicePosition = true;
+function plotPosition(position){
+    let marker
+    if(firstDevicePosition){
+        marker = L.marker([position.coords.latitude, position.coords.longitude], {
+            title: "My Position",
+            icon: dotIcon
+        }).addTo(map);
+    }else{
+        marker.setLatLng([position.coords.latitude, position.coords.longitude]);
+    }
+
 }
