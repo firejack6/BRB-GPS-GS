@@ -3,6 +3,9 @@ from rtlsdr import RtlSdr
 from aprspy import APRS # https://aprspy.readthedocs.io/en/latest/aprspy.html
 import json
 from pyserver import *
+import threading
+from time import sleep
+import sys
 
 async def streaming():
     sdr = RtlSdr()
@@ -40,14 +43,16 @@ def packetToDict(callsign, latitude, longitude, timestamp):
     else:
         loadedJSON[callsign] += [packetDict]
     writeToJSON(loadedJSON)
-    sendJSON(callsign, packetDict)
 
 global loadedJSON
 loadedJSON={}
 def openJSON():
     global loadedJSON
-    with open('aprs.json', 'r') as json_file:
-        loadedJSON = json.load(json_file)
+    try:
+        with open('aprs.json', 'r') as json_file:
+            loadedJSON = json.load(json_file)
+    except:
+        pass
         
 def writeToJSON(packet):
     with open('aprs.json', 'w') as json_file:
@@ -61,12 +66,29 @@ def callsignInstance(callsign):
     return instance
 
 try:
-    openJSON()
-    startServer()
     loop = asyncio.get_event_loop()
     loop.run_until_complete(streaming())
 except:
     print("Failed to open device")
 
+openJSON()
+server = threading.Thread(target=startServer) 
+server.start()
+global callsign
+
+def printCall():
+    global callsign
+    callsign = updateCallsign()
+    # print(callsign)
+    if(callsign != "N0CALL"):
+        return
+    else:
+        sleep(5)
+        printCall()
+    
+timer = threading.Thread(target=printCall)
+timer.start()
+
+
 testpacket = 'KE8VYZ>APWW11,WIDE1-1,WIDE2-1,qAR,WW8TF-15:@052118h4102.87N/08143.73Wl349/015/A=001264APRS-IS for Win32'
-handleSamples(testpacket)
+# handleSamples(testpacket)
