@@ -1,10 +1,9 @@
 import { initialMarkers, appendMarker } from "../Maps/mapping.js";
 import { host } from "../main/main.js"
 sendCallsign("KE8VYZ");
-
+// console.log(host)
 async function sendCallsign(callsign){
-
-    await fetch(`http://${host}:5000`,{
+    await fetch(`https://${host}:5000`,{
         method: "POST",
         body: JSON.stringify({
             "callsign": callsign,
@@ -22,7 +21,7 @@ async function sendCallsign(callsign){
 
 initGPS();
 async function initGPS(){
-    await fetch(`http://${host}:5000/init`,{
+    await fetch(`https://${host}:5000/init`,{
         method: "GET",
         headers: {
             "Content-Type": "application/json",
@@ -37,7 +36,7 @@ async function initGPS(){
 
 setInterval(getGPS, 5000);
 async function getGPS(){
-    await fetch(`http://${host}:5000/update`,{
+    await fetch(`https://${host}:5000/update`,{
         method: "GET",
         headers: {
             "Content-Type": "application/json",
@@ -51,7 +50,7 @@ async function getGPS(){
 }
 
 async function clearData(){
-    await fetch(`${host}:5000/clear`,{
+    await fetch(`https://${host}:5000/clear`,{
         method: "POST",
         headers: {
             "Content-Type": "application/json",

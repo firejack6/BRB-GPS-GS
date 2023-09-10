@@ -11,20 +11,27 @@
     </head>
 
     <body>
-        <div id="buttons">
-            <button id="clearData">CLEAR DATA</button>
-            <button id="settings">SETTINGS</button>
-            <button id="startCompass">ENABLE COMPASS</button>
+        <div id="compassContainer">
+            <div class="compassBox" id="FFL"></div>
+            <div class="compassBox" id="FL"></div>
+            <div class="compassBox" id="CL"></div>
+            <div class="compassBox" id="M">
+                <p id="heading">HEADING</p>
+                <p id="rawHeading">RAW HEADING</p>
+            </div>
+            <div class="compassBox" id="Cr"></div>
+            <div class="compassBox" id="FR"></div>
+            <div class="compassBox" id="FFR"></div>
         </div>
-        <div class="compass">
-            <div class="arrow"></div>
-            <div class="compass-circle"></div>
-            <div class="my-point"></div>
-          </div>
-          <button class="start-btn">Start compass</button>
+
+        <div id="buttons">
+            <button id="clearData" class="buttonClass">CLEAR DATA</button>
+            <button id="settings" class="buttonClass">SETTINGS </button>
+            <button id="startCompass" class="buttonClass">ENABLE COMPASS</button>
+        </div>
 
         <h1>APRS Map</h1>
-        <div id="map" class="hidden"></div>
+        <div id="map" class=""></div>
         <div id="settingsFrame" class="hidden">
             <label for="ip">SERVER IP ADDRESS</label>
             <input type="text" id="ip" name="ip" value="">

@@ -70,7 +70,7 @@ def clearJSON():
     
 def startServer():
     print("Starting server")
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0",ssl_context=('C:\\Users\\School\\Documents\\xampp\\apache\\conf\\blarg.cert','C:\\Users\\School\\Documents\\xampp\\apache\\conf\\blarg.key'),port=5000)
     sleep(0)
     
 def updateCallsign():

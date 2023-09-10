@@ -1,3 +1,4 @@
+import { setVars  } from "../compass/heading.js";
 const map = L.map('map').setView([35.34710258457093, -117.80807729650418], 12);
 
 //add tiles
@@ -95,7 +96,6 @@ export function appendMarker(d){
     if(Object.keys(d)[0] == "N0CALL"){
         return
     }
-
     // discard duplicates
     let OLDcs = Object.keys(oldData)
     if(d[OLDcs]){
@@ -105,6 +105,10 @@ export function appendMarker(d){
     }
     // plot new data
     else{
+        if(d["KE8VYZ"]){
+            setVars("rocket",d["KE8VYZ"])
+        }
+        
         let cs = Object.keys(d)[0];
         let data = d[cs]
     
@@ -120,15 +124,26 @@ export function appendMarker(d){
 
 setInterval(getDeviceLocation,5000);
 function getDeviceLocation(){
+    const options = {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0,
+      };
+
     if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(plotPosition);
+        navigator.geolocation.getCurrentPosition(plotPosition, failed, options);
     }else{
         alert("Geolocation is not supported by this browser.");
     }
 }
 
+function failed(){
+    console.log("failed to get location")
+}
+
 let firstDevicePosition = true;
 function plotPosition(position){
+    setVars("my",position.coords)
     let marker
     if(firstDevicePosition){
         marker = L.marker([position.coords.latitude, position.coords.longitude], {
@@ -138,5 +153,4 @@ function plotPosition(position){
     }else{
         marker.setLatLng([position.coords.latitude, position.coords.longitude]);
     }
-
 }
