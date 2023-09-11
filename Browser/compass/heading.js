@@ -7,7 +7,10 @@ function requestOrientationPermission(){
       if (response == 'granted') {
           window.addEventListener('deviceorientation', (e) => {
             myBearing = e.alpha;
-            document.getElementById("rawHeading").innerHTML = e.alpha.toFixed(3) + "°";
+            if (myBearing>180){
+              myBearing = myBearing-360;
+            }
+            document.getElementById("rawHeading").innerHTML = e.alpha.toFixed(3)+180 + "°";
           })
           setInterval(calculateHeading,1000);
 
@@ -30,6 +33,7 @@ function calculateHeading(){
     var x = Math.cos(myPositionR.latitude) * Math.sin(rocketPositionR.latitude) - Math.sin(myPositionR.latitude) * Math.cos(rocketPositionR.latitude) * Math.cos(rocketPositionR.longitude - myPositionR.longitude);
     var bearing = Math.atan2(y, x) * 180 / Math.PI; //direction we need to go, mybearing is the direction we're going
     var diffBearing = myBearing - bearing;
+    
     document.getElementById("headingg").innerHTML = "&nbsp"+diffBearing.toFixed(3) + "°";
 
     updateCompass(diffBearing);
@@ -60,33 +64,8 @@ function setVars(which,position){
 }
 
 function updateCompass(hdg){
-  resetCompass();
-  if(hdg<-120){
-    document.getElementById("FFL").classList.add("green")
-  } else if (hdg<-90){
-    document.getElementById("FL").classList.add("green")
-  } else if (hdg<-60){
-    document.getElementById("CL").classList.add("green")
-  } else if (hdg<30){
-    document.getElementById("C").classList.add("green")
-  } else if (hdg>120){
-    document.getElementById("FFR").classList.add("green")
-  } else if (hdg>90){
-    document.getElementById("FR").classList.add("green")
-  } else if (hdg>30){
-    document.getElementById("CR").classList.add("green")
-  } else{
-    document.getElementById("C").classList.add("green")
-  }
+  document.getElementById("compassArrow").style.transform = "rotate("+hdg+"deg)";
 }
-
-function resetCompass(){
-  let compassBoxes = document.querySelectorAll(".compassBox");
-  for(let i=0;i<compassBoxes.length;i++){
-    compassBoxes[i].classList.remove("green");
-  }
-}
-
 
 
 

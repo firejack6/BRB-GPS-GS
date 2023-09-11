@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyrtlsdr = "*"
+aprspy = "*"
+bitstring = "*"
+flask = "*"
+flask-cors = "*"
+pyrtlsdrlib = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
