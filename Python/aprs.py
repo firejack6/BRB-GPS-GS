@@ -10,8 +10,10 @@ import sys
 async def streaming():
     sdr = RtlSdr()
     sdr.sample_rate = 22050
+    # try 24000 or 48000
     sdr.center_freq=144390000
     sdr.freq_correction=30
+    # might change to 10 or 20
     sdr.gain='auto'
 
     async for samples in sdr.stream():

@@ -67,10 +67,11 @@ def clearJSON():
             }, json_file, indent=2)
     return "JSON cleared"
     
-    
+sslCertificate = "./secret/cert.env"
+sslKey = "./secret/key.env"
 def startServer():
     print("Starting server")
-    app.run(host="0.0.0.0",ssl_context=('C:\\Users\\School\\Documents\\xampp\\apache\\conf\\blarg.cert','C:\\Users\\School\\Documents\\xampp\\apache\\conf\\blarg.key'),port=5000)
+    app.run(host="0.0.0.0",ssl_context=(sslCertificate,sslKey),port=5000)
     sleep(0)
     
 def updateCallsign():

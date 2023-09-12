@@ -4,3 +4,4 @@ Python/__pycache__/**/*
 Python/__pycache__/aprs.cpython-311.pyc
 Python/__pycache__/pyserver.cpython-311.pyc
 Python/tempCodeRunnerFile.py
+*.env

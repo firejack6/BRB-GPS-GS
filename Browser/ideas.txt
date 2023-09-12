@@ -1,3 +1,4 @@
 https://opengeo.tech/maps/leaflet-gps/  follows your gps position
 python paths need to be fixed
-need to make ssl paths changable
+add tripoli mid ohio launch site
+add site selection

@@ -67,6 +67,7 @@ function updateCompass(hdg){
   document.getElementById("compassArrow").style.transform = "rotate("+hdg+"deg)";
 }
 
-
+// add north
+// place north marker by rotating to 360-myBearing
 
 export { setVars }
