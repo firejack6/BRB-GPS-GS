@@ -69,3 +69,5 @@ async function restartRadio(){
         } 
     })
 }
+
+export { clearData }

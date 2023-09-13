@@ -1,3 +1,4 @@
+import { clearData } from "./GPS/server.js"
 document.getElementById("clearData").addEventListener("click", function(){
     clearData();
 })

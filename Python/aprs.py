@@ -6,21 +6,31 @@ import threading
 from time import sleep
 import sys
 from subprocess import PIPE,Popen
+from datetime import datetime
 
-def handleSamples(sample):
+def handleSamples(pkt):
     try:
-        packet=APRS.parse(sample)
-        print(packet)
-        # sdr.cancel_read_async()
-        # callsign = packet.source
-        # latitude = packet.latitude
-        # longitude = packet.longitude
-        # timestamp = packet.timestamp
-        # if (latitude): # only want location packets
-        #     packetToDict(callsign, latitude, longitude, timestamp)
+        bktStart = pkt.index("[",0,3)
+        bktEnd = pkt.index("]",0,6)+2
+        pkt=pkt[bktEnd:-1]
     except:
-        print("FAILED")
-        print(sample)
+        # print(pkt)
+        pass
+    try:
+        packet=APRS.parse(pkt)
+        print(packet)
+        callsign = packet.source
+        latitude = packet.latitude
+        longitude = packet.longitude
+        timestamp = packet.timestamp
+        if(timestamp == None):
+            t=datetime.now()
+            timestamp=t.strftime("%Y-%m-%d %H:%M:%S")
+            print(timestamp)
+        if (latitude): # only want location packets
+            packetToDict(callsign, latitude, longitude, timestamp)
+    except:
+        pass
 
 def packetToDict(callsign, latitude, longitude, timestamp):
     packetDict = {
@@ -93,7 +103,7 @@ while True:
     if line != '':
         packet = str(line.rstrip())
         if packet != "b''":
-            # packet = packet.replace('b',"")
             packet = packet[1:-1]
-            debugRadio(packet)
+            packet = packet[1:]
+            # debugRadio(packet)
             handleSamples(packet)

@@ -38,6 +38,7 @@ def initData():
             return jsonify(savedJSON)
     except:
         pass
+    return jsonify("INIT FAILURE")
     
 @app.route('/update', methods=['GET'])
 def sendData():
@@ -52,6 +53,7 @@ def sendData():
                 return jsonify({"N0CALL":fulljson["N0CALL"][0]})
     except:
         pass
+    return jsonify("SEND FAILURE")
     
 @app.route("/clear", methods=['POST'])
 @cross_origin()
@@ -66,7 +68,7 @@ def clearJSON():
                 }
             ]
             }, json_file, indent=2)
-    return "JSON cleared"
+    return jsonify("JSON cleared")
 
 @app.route("/restart", methods=['POST'])
 @cross_origin()
@@ -79,7 +81,7 @@ def restartRadio():
         line=line.rstrip()
         print(line)
     
-    return "RESTARTING"
+    return jsonify("RESTARTING")
     
 sslCertificate = "./secret/cert.env"
 sslKey = "./secret/key.env"

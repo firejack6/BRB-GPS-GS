@@ -10,7 +10,7 @@ function requestOrientationPermission(){
             if (myBearing>180){
               myBearing = myBearing-360;
             }
-            document.getElementById("rawHeading").innerHTML = e.alpha.toFixed(3)+180 + "°";
+            // document.getElementById("rawHeading").innerHTML = e.alpha.toFixed(3)+180 + "°";
           })
           setInterval(calculateHeading,1000);
 
@@ -34,9 +34,7 @@ function calculateHeading(){
     var bearing = Math.atan2(y, x) * 180 / Math.PI; //direction we need to go, mybearing is the direction we're going
     var diffBearing = myBearing - bearing;
     
-    document.getElementById("headingg").innerHTML = "&nbsp"+diffBearing.toFixed(3) + "°";
-
-    updateCompass(diffBearing);
+    updateCompass(diffBearing, myBearing+90);
 
     //distance
     var R = 6371; // Radius of the earth in km
@@ -48,6 +46,7 @@ function calculateHeading(){
       Math.sin(dLon/2) * Math.sin(dLon/2);
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
     var d = R * c * 1000; // Distance in m
+
     document.getElementById("distance").innerHTML = "&nbsp"+d.toFixed(3) + "m";
   }
 }
@@ -63,8 +62,9 @@ function setVars(which,position){
   }
 }
 
-function updateCompass(hdg){
-  document.getElementById("compassArrow").style.transform = "rotate("+hdg+"deg)";
+function updateCompass(rkthdg,myhdg){
+  document.getElementById("compassRocket").style.transform = "rotate("+rkthdg+"deg)";
+  document.getElementById("compassNorth").style.transform = "rotate("+myhdg+"deg)";
 }
 
 // add north
