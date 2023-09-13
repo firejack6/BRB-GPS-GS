@@ -1,37 +1,26 @@
 import asyncio
-from rtlsdr import RtlSdr
 from aprspy import APRS # https://aprspy.readthedocs.io/en/latest/aprspy.html
 import json
 from pyserver import *
 import threading
 from time import sleep
 import sys
-
-async def streaming():
-    sdr = RtlSdr()
-    sdr.sample_rate = 22050
-    # try 24000 or 48000
-    sdr.center_freq=144390000
-    sdr.freq_correction=30
-    # might change to 10 or 20
-    sdr.gain='auto'
-
-    async for samples in sdr.stream():
-        # print(samples)
-        handleSamples(samples)
-        
-    await sdr.stop()
-
-    sdr.close()
+from subprocess import PIPE,Popen
 
 def handleSamples(sample):
-    packet=APRS.parse(sample)
-    callsign = packet.source
-    latitude = packet.latitude
-    longitude = packet.longitude
-    timestamp = packet.timestamp
-    if (latitude): # only want location packets
-        packetToDict(callsign, latitude, longitude, timestamp)
+    try:
+        packet=APRS.parse(sample)
+        print(packet)
+        # sdr.cancel_read_async()
+        # callsign = packet.source
+        # latitude = packet.latitude
+        # longitude = packet.longitude
+        # timestamp = packet.timestamp
+        # if (latitude): # only want location packets
+        #     packetToDict(callsign, latitude, longitude, timestamp)
+    except:
+        print("FAILED")
+        print(sample)
 
 def packetToDict(callsign, latitude, longitude, timestamp):
     packetDict = {
@@ -67,12 +56,6 @@ def callsignInstance(callsign):
         instance = 0
     return instance
 
-try:
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(streaming())
-except:
-    print("Failed to open device")
-
 openJSON()
 server = threading.Thread(target=startServer) 
 server.start()
@@ -94,3 +77,23 @@ timer.start()
 
 testpacket = 'KE8VYZ>APWW11,WIDE1-1,WIDE2-1,qAR,WW8TF-15:@052118h4102.87N/08143.73Wl349/015/A=001264APRS-IS for Win32'
 # handleSamples(testpacket)
+
+
+# turn on radio receiver
+# Popen("echo 'blacklist dvb_usb_rtl28xxu' | sudo tee --append /etc/modprobe.d/blacklist-dvb_usb_rtl28xxu.conf",shell=True)
+proc = Popen('rtl_fm -f 144.39M - | direwolf -c sdr.conf -r 24000 -t 0 -D 1 -', stdout=PIPE, shell=True)
+
+def debugRadio(raw):
+    # print(raw)
+    f=open("testin.txt","a")
+    f.write(raw+"\n")
+
+while True:
+    line = proc.stdout.readline()
+    if line != '':
+        packet = str(line.rstrip())
+        if packet != "b''":
+            # packet = packet.replace('b',"")
+            packet = packet[1:-1]
+            debugRadio(packet)
+            handleSamples(packet)

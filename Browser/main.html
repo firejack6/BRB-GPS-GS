@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>APRS MAP</title>
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
-        <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css" charset="utf-8">
-        <script src="../node_modules/leaflet/dist/leaflet.js" charset="utf-8"></script>
-        <script src="../Maps/protomaps/pmtiles.js"></script>
-        <script src="../Maps/protomaps/protomaps-leaflet.js"></script>
-        <script src="../GPS/server.js" type="module"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css" charset="utf-8">
+        <script src="./node_modules/leaflet/dist/leaflet.js" charset="utf-8"></script>
+        <script src="./Maps/protomaps/pmtiles.js"></script>
+        <script src="./Maps/protomaps/protomaps-leaflet.js"></script>
+        <script src="./GPS/server.js" type="module"></script>
     </head>
 
     <body>
@@ -17,12 +17,16 @@
             <button id="clearData" class="buttonClass">CLEAR DATA</button>
             <button id="settings" class="buttonClass">SETTINGS </button>
             <button id="startCompass" class="buttonClass">ENABLE COMPASS</button>
+            <button id="restartRadio" class="buttonClass">RESTART RADIO</button>
             <h1>DISTANCE: <h1 id="distance"></h1></h1>
         </div>
 
         <div id="compassContainer">
-            <div id="compassCircle"></div>
-            <div id="compassArrow"></div>
+            <div id="compassCircle">
+                <p id="northLabel">N</p>
+            </div>
+            <div id="compassRocket"></div>
+            <div id="compassNorth"></div>
         </div>
 
         <h1>APRS Map</h1>
@@ -35,6 +39,6 @@
         </div>
     </body>
     <script src="main.js" type="module"></script>
-    <script src="../Maps/mapping.js" type="module"> </script>
-    <script src="../compass/heading.js" type="module"> </script>
+    <script src="./Maps/mapping.js" type="module"> </script>
+    <script src="./compass/heading.js" type="module"> </script>
 </html>

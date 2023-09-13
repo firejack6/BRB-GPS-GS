@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 from time import sleep
 import json
+import subprocess
 
 
 def setDefaultCallsign():
@@ -43,7 +44,7 @@ def sendData():
     try:
         with open('aprs.json', 'r') as json_file:
             fulljson = json.load(json_file)
-            print(callsignStorage)
+            # print(callsignStorage)
             try:
                 latest = {callsignStorage:fulljson[callsignStorage][len(fulljson[callsignStorage])-1]}
                 return jsonify(latest)
@@ -66,6 +67,19 @@ def clearJSON():
             ]
             }, json_file, indent=2)
     return "JSON cleared"
+
+@app.route("/restart", methods=['POST'])
+@cross_origin()
+def restartRadio():
+    shl = subprocess.Popen("lsusb",stdout=subprocess.PIPE,shell=True)
+    while True:
+        line = shl.stdout.readline()
+        if not line:
+            break
+        line=line.rstrip()
+        print(line)
+    
+    return "RESTARTING"
     
 sslCertificate = "./secret/cert.env"
 sslKey = "./secret/key.env"

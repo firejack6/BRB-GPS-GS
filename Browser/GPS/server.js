@@ -1,5 +1,5 @@
 import { initialMarkers, appendMarker } from "../Maps/mapping.js";
-import { host } from "../main/main.js"
+import { host } from "../main.js"
 sendCallsign("KE8VYZ");
 // console.log(host)
 async function sendCallsign(callsign){
@@ -56,5 +56,16 @@ async function clearData(){
             "Content-Type": "application/json",
             "Accept": "application/json"
         }
+    })
+}
+
+document.getElementById("restartRadio").addEventListener("click", restartRadio);
+async function restartRadio(){
+    await fetch(`https://${host}:5000/restart`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        } 
     })
 }
