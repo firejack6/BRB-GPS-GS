@@ -8,6 +8,7 @@
         <script src="./Maps/protomaps/pmtiles.js"></script>
         <script src="./Maps/protomaps/protomaps-leaflet.js"></script>
         <script src="./GPS/server.js" type="module"></script>
+        <meta http-equiv="Cache-Control" content="private"
     </head>
 
     <body>
@@ -41,6 +42,16 @@
             <input type="text" id="ip" name="ip" value="">
 
             <button id="submit">SUBMIT</button>
+            <div>
+                <label for="site">Launch Site</label>
+                <select id="site">
+                    <option value="">Select</option>
+                    <option value="FAR">FAR</option>
+                    <option value="SPACEPORT">SPACEPORT</option>
+                    <option value="MIDOHIO">MIDOHIO</option>
+                    <option value="AMHERST">AMHERST</option>
+                </select>
+            </div>
         </div>
     </body>
     <script src="main.js" type="module"></script>

@@ -2,54 +2,62 @@ import { setVars  } from "../compass/heading.js";
 const map = L.map('map').setView([35.34710258457093, -117.80807729650418], 12);
 
 //add tiles
-var FARlayer = protomapsL.leafletLayer({url:'../Maps/tiles/FAR.LG.pmtiles'});
+var FARlayer = protomapsL.leafletLayer({url:'./Maps/tiles/FAR.LG.pmtiles'});
 FARlayer.addTo(map);
 
-var AKRONlayer = protomapsL.leafletLayer({url:'../Maps/tiles/AKRON.pmtiles'});
+var AKRONlayer = protomapsL.leafletLayer({url:'./Maps/tiles/AKRON.pmtiles'});
 AKRONlayer.addTo(map);
 
-var SPACEPORTlayer = protomapsL.leafletLayer({url:'../Maps/tiles/SPACEPORT.pmtiles'});
+var SPACEPORTlayer = protomapsL.leafletLayer({url:'./Maps/tiles/SPACEPORT.pmtiles'});
 SPACEPORTlayer.addTo(map);
 
-var AMHERSTlayer = protomapsL.leafletLayer({url:'../Maps/tiles/AMHERST.pmtiles'});
+var AMHERSTlayer = protomapsL.leafletLayer({url:'./Maps/tiles/AMHERST.pmtiles'});
 AMHERSTlayer.addTo(map);
+
+var MIDOHIOlayer = protomapsL.leafletLayer({url:'./Maps/tiles/MIDOHIO.pmtiles'});
+MIDOHIOlayer.addTo(map);
 
 //create icons
 var rocketIcon = L.icon({
-    iconUrl: '../Maps/icons/rocket.webp',
+    iconUrl: './Maps/icons/rocket.webp',
     iconSize: [50, 50],
 });
 
 var launchIcon = L.icon({
-    iconUrl: '../Maps/icons/launch.png',
+    iconUrl: './Maps/icons/launch.png',
     iconSize: [50, 50],
 });
 
 var zippyIcon = L.icon({
-    iconUrl: '../Maps/icons/zippy.png',
+    iconUrl: './Maps/icons/zippy.png',
     iconSize: [30, 50],
 });
 
 var dotIcon = L.icon({
-    iconUrl: '../Maps/icons/reddot.webp',
+    iconUrl: './Maps/icons/reddot.webp',
     iconSize: [10, 10],
 });
 
 //add image overlays
-var FARZ13 = L.imageOverlay('../Maps/satellite/FAR.Z13.png', [[35.209721, -117.641601],[35.46067, -118.037109]],{
+var FARZ13WIDE = L.imageOverlay('./Maps/satellite/FAR.Z13.WIDE.512.png', [[35.0659731379842, -117.3779296875],[35.7465122599185, -118.212890625]],{
     opacity: 0.5
 });
-FARZ13.addTo(map);
+FARZ13WIDE.addTo(map);
 
-var AMHERST13 = L.imageOverlay('../Maps/satellite/Amherst.png', [[41.310824, -82.265625],[41.376808, -82.353516]],{
+var AMHERST13 = L.imageOverlay('./Maps/satellite/Amherst.png', [[41.310824, -82.265625],[41.376808, -82.353516]],{
     opacity: 0.6
 });
 AMHERST13.addTo(map);
 
-var SPACEPORT13 = L.imageOverlay('../Maps/satellite/Spaceport.png', [[32.916485, -106.831054],[32.990236, -106.962891]],{
+var SPACEPORT13 = L.imageOverlay('./Maps/satellite/Spaceport.png', [[32.916485, -106.831054],[32.990236, -106.962891]],{
     opacity: 0.6
 });
 SPACEPORT13.addTo(map);
+
+var MIDOHIO = L.imageOverlay('./Maps/satellite/MidOhio.png', [[39.8085360414459, -83.583984375],[39.9097362345372, -83.7158203125]],{
+    opacity: 0.6
+});
+MIDOHIO.addTo(map);
 
 //add markers
 var FARmarker = L.marker([35.34710258457093, -117.80807729650418],{
@@ -69,6 +77,11 @@ var SPACEPORTmarker = L.marker([32.94023256718151, -106.91949721558379],{
 
 var AMHERSTmarker = L.marker([41.34100613451444, -82.31234047171398],{
     title:"AMHERST",
+    icon: launchIcon
+}).addTo(map);
+
+var MIDOHIOmarker = L.marker([39.86088459952167, -83.65579310291524],{
+    title:"MIDOHIO",
     icon: launchIcon
 }).addTo(map);
 
@@ -154,3 +167,19 @@ function plotPosition(position){
         marker.setLatLng([position.coords.latitude, position.coords.longitude]);
     }
 }
+
+// map.panTo(new L.latLng(39.86088459952167, -83.65579310291524))
+document.getElementById("site").addEventListener("change", () => {
+    var site = document.getElementById("site").value;
+    if (site == "FAR"){
+        map.panTo(new L.latLng(35.34710258457093, -117.80807729650418))
+    }else if (site == "AKRON"){
+        map.panTo(new L.latLng(41.07591530951977, -81.51777788686735))
+    }else if (site == "SPACEPORT"){
+        map.panTo(new L.latLng(32.94023256718151, -106.91949721558379))
+    }else if (site == "AMHERST"){
+        map.panTo(new L.latLng(41.34100613451444, -82.31234047171398))
+    }else if (site == "MIDOHIO"){
+        map.panTo(new L.latLng(39.86088459952167, -83.65579310291524))
+    }
+});
