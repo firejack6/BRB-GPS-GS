@@ -25,7 +25,7 @@ window.addEventListener("load", function(){
     MIDOHIOlayer.addTo(map);
     
     //add image overlays
-    var FARZ13WIDE = L.imageOverlay('./Maps/satellite/FAR.Z13.WIDE.512.png', [[35.0659731379842, -117.3779296875],[35.7465122599185, -118.212890625]],{
+    var FARZ13WIDE = L.imageOverlay('./Maps/satellite/FAR.Z13.Wide.512.png', [[35.0659731379842, -117.3779296875],[35.7465122599185, -118.212890625]],{
         opacity: 0.5
     });
     FARZ13WIDE.addTo(map);
