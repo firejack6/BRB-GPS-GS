@@ -18,66 +18,64 @@
 }
 
 #buttons{
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .buttonClass{
-height: 5vh;
-width: 15vw;
-text-align: center;
-line-height: 1em;
-font-size: 1.25vh;
+  height: 5vh;
+  width: 15vw;
+  text-align: center;
+  line-height: 1em;
+  font-size: 1.25vh;
 }
 
 #FFL{
-text-align: left;
+  text-align: left;
 }
 
 #FFR{
-text-align: right;
+  text-align: right;
 }
 
 #FL{
-text-align: left;
+  text-align: left;
 }
 
 #FR{
-text-align: right;
+  text-align: right;
 }
 
 #CL{
-text-align: left;
+  text-align: left;
 }
 
 #CR{
-text-align: right;
+  text-align: right;
 }
 
 .green{
-background-color: green;
+  background-color: green;
 }
 
 #compassContainer{
-position: fixed;
-transform: translate(-50%, 50%);
-left: 50vw;
-top: 10vh;
-width: 10vh;
-height: 10vh;
-z-index: 1100;
-/* border: 3px solid orange; */
+  position: fixed;
+  transform: translate(-50%, 50%);
+  left: 50vw;
+  top: 10vh;
+  width: 10vh;
+  height: 10vh;
+  z-index: 1100;
 }
 
 #compassCircle{
-height: 10vh;
-width: 10vh;
-border-radius: 50%;
-background-color: grey;
-border: 1px solid black;
-/* transform: rotate(90deg); */
-position: absolute;
-/* border: 3px solid red; */
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  background-color: grey;
+  /* transform: rotate(90deg); */
+  position: absolute;
+  border: 3px solid black;
 }
 
 #rocketCont{
@@ -85,13 +83,16 @@ position: absolute;
   transform: translate(-50%, -100%);
   left: 50%;
   top: 50%;
+  /* border: 3px solid orange; */
 }
 
 #compassRocket{
-height: 5vh;
-width: 1vh;
-background-color: black;
-transform-origin: bottom;
+  height: 5vh;
+  width: 1vh;
+  background-color: black;
+  transform-origin: bottom;
+  transform: translateX(25%);
+
 }
 
 #northCont{
@@ -102,42 +103,41 @@ transform-origin: bottom;
 }
 
 #compassNorth{
-transform-origin: bottom;
-height: 5vh;
-width: 0.5vh;
-background-color: red;
+  transform-origin: bottom;
+  height: 5vh;
+  width: 0.5vh;
+  background-color: red;
+  transform: translateX(50%);
+}
+
+.compassLabel{
+  display: inline-block;
+  width: fit-content;
+  transform: translateX(-50%);
 }
 
 #northLabel{
-position: absolute;
-width: fit-content;
-top: 0;
-left: 50%;
-transform: translate(-50%, -175%);
-/* border: 3px solid orange; */
+  position: relative;
+  bottom: 1.5em;
+  left: 50%;
 }
 
 #eastLabel{
-position: absolute;
-width: fit-content;
-top: 25%;
-left: 110%;
-/* border: 3px solid orange; */
+  position: absolute;
+  top: 50%;
+  right: -1.5em;
+  transform: translateY(-50%);
 }
 
 #southLabel{
-position: absolute;
-width: fit-content;
-bottom: -40%;
-left:45%;
-/* border: 3px solid orange; */
+  position: absolute;
+  bottom: -1.5em;
+  left:45%;
 }
 
 #westLabel{
-position: absolute;
-width: fit-content;
-top: 25%;
-left: -20%;
-/* transform: translate(-100%, -450%); */
-/* border: 3px solid orange; */
+  position: absolute;
+  top: 50%;
+  left: -1.5em;
+  transform: translateY(-50%);
 }

@@ -7,7 +7,7 @@
         <script src="./node_modules/leaflet/dist/leaflet.js" charset="utf-8"></script>
         <script src="./Maps/protomaps/pmtiles.js"></script>
         <script src="./Maps/protomaps/protomaps-leaflet.js"></script>
-        <script src="./GPS/server.js" type="module"></script>
+        <script src="./HTTPrequests/server.js" type="module"></script>
         <meta http-equiv="Cache-Control" content="private">
     </head>
 
@@ -24,10 +24,10 @@
 
         <div id="compassContainer">
             <div id="compassCircle">
-                <p id="northLabel">N</p>
-                <p id="eastLabel">E</p>
-                <p id="southLabel">S</p>
-                <p id="westLabel">W</p>
+                <span id="northLabel" class="compassLabel">N</span>
+                <span id="eastLabel" class="compassLabel">E</span>
+                <span id="southLabel" class="compassLabel">S</span>
+                <span id="westLabel" class="compassLabel">W</span>
             </div>
             <div id="rocketCont">
                 <div id="compassRocket"></div>
@@ -41,10 +41,17 @@
         <h1>APRS Map</h1>
         <div id="map" class=""></div>
         <div id="settingsFrame" class="hidden">
-            <label for="ip">SERVER IP ADDRESS</label>
-            <input type="text" id="ip" name="ip" value="">
-
-            <button id="submit">SUBMIT</button>
+            <div class="hidden">
+                <label for="ip">SERVER IP ADDRESS</label>
+                <input type="text" id="ip" name="ip" value="">
+                <button id="IPsubmit">SUBMIT</button>
+            </div>
+            <div>
+                <label for="callsign">CALLSIGN</label>
+                <input type="text" id="callsign" name="callsign" value="">
+                <button id="callsignSubmit">SUBMIT</button>
+            </div>
+            
             <div>
                 <label for="site">Launch Site</label>
                 <select id="site">
@@ -53,6 +60,7 @@
                     <option value="SPACEPORT">SPACEPORT</option>
                     <option value="MIDOHIO">MIDOHIO</option>
                     <option value="AMHERST">AMHERST</option>
+                    <option value="AKRON">AKRON</option>
                 </select>
             </div>
         </div>

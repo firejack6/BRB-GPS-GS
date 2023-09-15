@@ -1,7 +1,7 @@
 import { initialMarkers, appendMarker } from "../Maps/mapping.js";
 import { host } from "../main.js"
-sendCallsign("KE8VYZ");
-// console.log(host)
+import { desiredCallsign } from "../main.js";
+sendCallsign(desiredCallsign);
 async function sendCallsign(callsign){
     await fetch(`https://${host}:5000`,{
         method: "POST",
