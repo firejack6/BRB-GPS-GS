@@ -65,6 +65,7 @@ function setVars(which,position){
 function updateCompass(rkthdg,myhdg){
   document.getElementById("compassRocket").style.transform = "rotate("+rkthdg+"deg)";
   document.getElementById("compassNorth").style.transform = "rotate("+myhdg+"deg)";
+  document.getElementById("compassCircle").style.transform = "rotate("+myhdg+"deg)";
 }
 
 // add north

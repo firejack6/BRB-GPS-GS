@@ -1,6 +1,7 @@
 import { setVars  } from "../compass/heading.js";
+import { writeCache, readCache } from "../main.js";
 const map = L.map('map').setView([35.34710258457093, -117.80807729650418], 12);
-
+readCache();
 //add tiles
 var FARlayer = protomapsL.leafletLayer({url:'./Maps/tiles/FAR.LG.pmtiles'});
 FARlayer.addTo(map);
@@ -141,7 +142,7 @@ function getDeviceLocation(){
         enableHighAccuracy: true,
         timeout: 5000,
         maximumAge: 0,
-      };
+    };
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(plotPosition, failed, options);
@@ -170,6 +171,12 @@ function plotPosition(position){
 
 // map.panTo(new L.latLng(39.86088459952167, -83.65579310291524))
 document.getElementById("site").addEventListener("change", () => {
+    document.getElementById("settingsFrame").classList.add("hidden")
+    changeLocation();
+    writeCache();
+});
+
+function changeLocation(){
     var site = document.getElementById("site").value;
     if (site == "FAR"){
         map.panTo(new L.latLng(35.34710258457093, -117.80807729650418))
@@ -182,4 +189,6 @@ document.getElementById("site").addEventListener("change", () => {
     }else if (site == "MIDOHIO"){
         map.panTo(new L.latLng(39.86088459952167, -83.65579310291524))
     }
-});
+}
+
+export { changeLocation }
