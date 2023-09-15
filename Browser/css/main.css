@@ -63,14 +63,19 @@
   transform: translate(-50%, 50%);
   left: 50vw;
   top: 10vh;
-  width: 10vh;
-  height: 10vh;
+  width: 30vh;
+  height: 30vh;
   z-index: 1100;
 }
 
+#compassPNG{
+  height: 100%;
+  width: 100%;
+}
+
 #compassCircle{
-  height: 10vh;
-  width: 10vh;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   background-color: grey;
   /* transform: rotate(90deg); */
@@ -80,19 +85,19 @@
 
 #rocketCont{
   position: absolute;
-  transform: translate(-50%, -100%);
+  transform: translate(-40%, -50%);
   left: 50%;
   top: 50%;
-  /* border: 3px solid orange; */
+  height: 75%;
 }
 
 #compassRocket{
-  height: 5vh;
-  width: 1vh;
-  background-color: black;
-  transform-origin: bottom;
-  transform: translateX(25%);
-
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 1.5vh 23vh 1.5vh;
+  border-color: transparent transparent red transparent;
+  transform: translateY(-10%);
 }
 
 #northCont{
@@ -100,44 +105,13 @@
   transform: translate(-50%, -100%);
   left: 50%;
   top: 50%;
+  height: 50%;
 }
 
 #compassNorth{
   transform-origin: bottom;
-  height: 5vh;
+  height: 100%;
   width: 0.5vh;
-  background-color: red;
+  /* background-color: red; */
   transform: translateX(50%);
-}
-
-.compassLabel{
-  display: inline-block;
-  width: fit-content;
-  transform: translateX(-50%);
-}
-
-#northLabel{
-  position: relative;
-  bottom: 1.5em;
-  left: 50%;
-}
-
-#eastLabel{
-  position: absolute;
-  top: 50%;
-  right: -1.5em;
-  transform: translateY(-50%);
-}
-
-#southLabel{
-  position: absolute;
-  bottom: -1.5em;
-  left:45%;
-}
-
-#westLabel{
-  position: absolute;
-  top: 50%;
-  left: -1.5em;
-  transform: translateY(-50%);
 }

@@ -2,25 +2,43 @@ document.getElementById("startCompass").addEventListener("click", requestOrienta
 
 let myBearing;
 function requestOrientationPermission(){
-  DeviceOrientationEvent.requestPermission()
-  .then(response => {
-      if (response == 'granted') {
-          window.addEventListener('deviceorientation', (e) => {
-            myBearing = e.alpha;
-            if (myBearing>180){
-              myBearing = myBearing-360;
-            }
-            // document.getElementById("rawHeading").innerHTML = e.alpha.toFixed(3)+180 + "°";
-          })
-          setInterval(calculateHeading,1000);
+  try{
+    DeviceOrientationEvent.requestPermission()
+    .then(response => {
+        if (response == 'granted') {
+            window.addEventListener('deviceorientation', (e) => {
+              myBearing = e.alpha;
+              if (myBearing>180){
+                myBearing = myBearing-360;
+              }
+              // document.getElementById("rawHeading").innerHTML = e.alpha.toFixed(3)+180 + "°";
+            })
+            setInterval(calculateHeading,1000);
+        }
+    })
+    .catch(console.error)
+  } catch{
+    compassTesting = true;
+    myBearing = 0;
+    setInterval(fakeHeading,100);
+    setInterval(calculateHeading,100);
+  }
+}
 
-      }
-  })
-  .catch(console.error)
+let compassTesting = false;
+function fakeHeading(){
+  myBearing = myBearing + 10;
+  if(myBearing>360){
+    myBearing = 0;
+  }
 }
 
 let myPositionR = {}, rocketPositionR = {};
 function calculateHeading(){
+  if(compassTesting){
+    rocketPosition = {latitude: 41.081, longitude: -81.519};
+    myPosition = {latitude: 41.085, longitude: -81.514};
+  }
   if(myPosition != undefined && rocketPosition != undefined){
     // to radians
     myPositionR.latitude = myPosition.latitude * Math.PI / 180;
@@ -33,7 +51,6 @@ function calculateHeading(){
     var x = Math.cos(myPositionR.latitude) * Math.sin(rocketPositionR.latitude) - Math.sin(myPositionR.latitude) * Math.cos(rocketPositionR.latitude) * Math.cos(rocketPositionR.longitude - myPositionR.longitude);
     var bearing = Math.atan2(y, x) * 180 / Math.PI; //direction we need to go, mybearing is the direction we're going
     var diffBearing = myBearing - bearing;
-    
     updateCompass(diffBearing, myBearing+90);
 
     //distance
@@ -63,9 +80,9 @@ function setVars(which,position){
 }
 
 function updateCompass(rkthdg,myhdg){
-  document.getElementById("compassRocket").style.transform = "rotate("+rkthdg+"deg)";
+  document.getElementById("rocketCont").style.setProperty("transform","translate(-35%, -50%) rotate("+rkthdg+"deg)");
   document.getElementById("compassNorth").style.transform = "rotate("+myhdg+"deg)";
-  document.getElementById("compassCircle").style.transform = "rotate("+myhdg+"deg)";
+  document.getElementById("compassPNG").style.transform = "rotate("+myhdg+"deg)";
 }
 
 // add north

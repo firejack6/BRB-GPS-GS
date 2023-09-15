@@ -6,7 +6,6 @@ window.addEventListener("load", function(){
     readCache();
 
     //add base map
-    console.log(launchSiteCoords())
     map = L.map('map').setView(launchSiteCoords(), 12);
 
     //add tiles
