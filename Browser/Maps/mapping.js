@@ -64,23 +64,23 @@ function createTiles(){
 
 function createSatelliteImages(){
     //create image overlays
-    FARZ13WIDE = L.imageOverlay('./Maps/satellite/FAR.Z13.Wide.512.png', [[35.0659731379842, -117.3779296875],[35.7465122599185, -118.212890625]],{
+    FARZ13WIDE = L.imageOverlay('./Maps/satellite/FAR.Z13.WIDE.512.webp', [[35.2097216452214, -117.5537109375],[35.6037187406973, -118.0810546875]],{
         opacity: 0.5
     });
 
-    AMHERST13 = L.imageOverlay('./Maps/satellite/Amherst.png', [[41.310824, -82.265625],[41.376808, -82.353516]],{
+    AMHERST13 = L.imageOverlay('./Maps/satellite/Amherst.webp', [[41.310824, -82.3974609375],[41.3768085657023, -82.2216796875]],{
         opacity: 0.6
     });
 
-    SPACEPORT13 = L.imageOverlay('./Maps/satellite/Spaceport.png', [[32.916485, -106.831054],[32.990236, -106.962891]],{
+    SPACEPORT13 = L.imageOverlay('./Maps/satellite/Spaceport.webp', [[32.8795871730663, -107.05078125],[33.0639241981207, -106.7431640625]],{
         opacity: 0.6
     });
 
-    MIDOHIO13 = L.imageOverlay('./Maps/satellite/MidOhio.png', [[39.8085360414459, -83.583984375],[39.9097362345372, -83.7158203125]],{
+    MIDOHIO13 = L.imageOverlay('./Maps/satellite/MidOhio.webp', [[39.7747694852955, -83.5400390625],[39.9434364619742, -83.7158203125]],{
         opacity: 0.6
     });
 
-    AKRON13 = L.imageOverlay("./Maps/satellite/Akron.png", [[41.0462168145206,-81.5625],[41.1786539723317,-81.38671875]],{
+    AKRON13 = L.imageOverlay("./Maps/satellite/Akron.webp", [[41.0130657870063,-81.5625],[41.2117215105479,-81.3427734375]],{
         opacity: 0.6
     });
 }
