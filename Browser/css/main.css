@@ -8,7 +8,7 @@
   left: 50vw;
   top: 20vh;
   z-index: 1000;
-  width: 50vw;
+  width: fit-content;
   height: fit-content;
   border: 20px solid orange;
   background-color: orange;

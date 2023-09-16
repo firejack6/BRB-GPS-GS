@@ -14,7 +14,7 @@ function requestOrientationPermission(){
   } else {
     window.addEventListener("deviceorientationabsolute", handler, true);
   }
-  setInterval(calculateHeading,100)
+  setInterval(calculateHeading,10000)
 }
 
 function iOS() {
@@ -33,9 +33,14 @@ function iOS() {
 let myBearing;
 function handler(e) {
   myBearing = e.webkitCompassHeading || Math.abs(e.alpha - 360);
+  if(bearing){
+    let diffBearing = myBearing-bearing;
+    let rocketHeading = myBearing-diffBearing;
+    updateCompass(diffBearing,rocketHeading)
+  }
 }
 
-let myPositionR = {}, rocketPositionR = {};
+let myPositionR = {}, rocketPositionR = {}, bearing;
 function calculateHeading(){
   if(myPosition != undefined && rocketPosition != undefined){
     // to radians
@@ -47,7 +52,7 @@ function calculateHeading(){
     //bearing
     var y = Math.sin(rocketPositionR.longitude - myPositionR.longitude) * Math.cos(rocketPositionR.latitude);
     var x = Math.cos(myPositionR.latitude) * Math.sin(rocketPositionR.latitude) - Math.sin(myPositionR.latitude) * Math.cos(rocketPositionR.latitude) * Math.cos(rocketPositionR.longitude - myPositionR.longitude);
-    var bearing = Math.atan2(y, x) * 180 / Math.PI; //direction we need to go, mybearing is the direction we're going
+    bearing = Math.atan2(y, x) * 180 / Math.PI; //direction we need to go, mybearing is the direction we're going
 
     var diffBearing = myBearing - bearing;
 

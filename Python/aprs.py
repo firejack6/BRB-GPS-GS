@@ -47,6 +47,7 @@ def packetToDict(callsign, latitude, longitude, timestamp, altitude):
         "timestamp": str(timestamp)
     }
     inst = callsignInstance(callsign)
+    openJSON()
     if (inst == 0):
         loadedJSON[callsign] = [packetDict]
     else:
