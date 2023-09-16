@@ -17,8 +17,9 @@ window.addEventListener("load", function(){
 
 document.getElementById("site").addEventListener("change", () => {
     document.getElementById("settingsFrame").classList.add("hidden")
-    changeLocation();
+    changeLocation(site);
     writeCache();
+    location.reload()
 });
 
 function createMarkers(){
@@ -114,14 +115,19 @@ export function initialMarkers(d){
 
         let cs = Object.keys(d)[i];
         if(cs != "N0CALL"){
+            if(cs==desiredCallsign){
+                var icon = rocketIcon;
+            } else {
+                var icon = L.Marker.prototype.options.icon;
+            }
             let data = d[cs][0]
             let alt = d.altitude;
             var marker = L.marker([data.latitude, data.longitude], {
                 title: cs,
-                icon: rocketIcon
+                icon: icon
             }).addTo(map);
         
-            // marker.bindPopup(`<p> ${cs} \n ${alt} \n ${data.timestamp} </p>`)
+            marker.bindPopup(`<p class="multilineSpan"> ${cs} \n alt:${alt} \n ${data.timestamp} </p>`)
         }
     }
 }
@@ -143,28 +149,36 @@ export function appendMarker(d){
     else{
         if(d[desiredCallsign]){
             setVars("rocket",d[desiredCallsign])
+            var icon = rocketIcon;
+        } else {
+            var icon = L.Marker.prototype.options.icon;
         }
         
         let cs = Object.keys(d)[0];
         let data = d[cs]
         
+
         var marker = L.marker([data.latitude, data.longitude], {
-            title: cs
+            title: cs,
+            icon: icon
         }).addTo(map);
         
         let alt = data.altitude;
 
         if(appendMarkerTO){
             marker.bindPopup(`<span class="multilineSpan"> ${cs} \n alt: ${alt} \n ${data.timestamp} </span>`)
-        } else {
+        } else if(cs==desiredCallsign){
             marker.bindPopup(`<span class="multilineSpan"> ${cs} \n alt: ${alt} \n ${data.timestamp} </span>`)
             .openPopup();
+        }
+        else{
+            marker.bindPopup(`<span class="multilineSpan"> ${cs} \n alt: ${alt} \n ${data.timestamp} </span>`)  
         }
         oldData = d;
     }   
 }
 
-setInterval(getDeviceLocation,5000);
+setInterval(getDeviceLocation,10000);
 function getDeviceLocation(){
     const options = {
         enableHighAccuracy: true,
@@ -197,8 +211,10 @@ function plotPosition(position){
     }
 }
 
+
+
+
 function changeLocation(){
-    console.log(site)
     if(site=="FAR"){
         FARlayer.addTo(map)
         FARZ13WIDE.addTo(map)

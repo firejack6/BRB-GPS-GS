@@ -1,6 +1,7 @@
 import { clearData, sendCallsign } from "./HTTPrequests/server.js"
 document.getElementById("clearData").addEventListener("click", function(){
     clearData();
+    document.getElementById("settingsFrame").classList.toggle("hidden");
 })
 
 document.getElementById("settings").addEventListener("click", function(){
@@ -37,7 +38,7 @@ document.getElementById("callsign").addEventListener("click", function(){
     sendCallsign(desiredCallsign)
 })
 
-export let site
+export var site
 async function readCache(){
     if(localStorage["site"]){
         document.getElementById("site").value = localStorage["site"];
@@ -45,10 +46,12 @@ async function readCache(){
         localStorage["site"] = "AKRON"
     }
     site=localStorage["site"]
+    return site
 }
 
 async function writeCache(){
     localStorage["site"] = document.getElementById("site").value;
+    readCache();
 }
 
 document.getElementById("rawpackets").addEventListener("click", function(){
