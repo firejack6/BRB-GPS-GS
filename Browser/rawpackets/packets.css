@@ -4,3 +4,40 @@
     white-space: pre-wrap;
     overflow-wrap: break-word;
 }
+
+.hidden{
+    display: none;
+}
+
+#callsigns{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90vh;
+    /* width: 50vw; */
+    width: fit-content;
+}
+
+.callsignButton{
+    height: 5vh;
+    width: fit-content;
+}
+
+#packetDisplay{
+    height: 100%;
+    width: 100%;
+}
+
+#textDisplay{
+    position: absolute;
+    left: 50vw;
+    top: 10vh;
+    height: 75vh;
+    width: 40vw;
+}
+
+#refreshData{
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+}

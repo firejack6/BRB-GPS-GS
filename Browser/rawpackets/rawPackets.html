@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <head>
     <title>APRS Packets</title>
-    <script src="packets.js"></script>
     <link rel="stylesheet" type="text/css" href="packets.css">
 
 </head>
 <body>
-    <textarea id="packets"></textarea>
+    <div id="callsigns"></div>
+    <div id="textDisplay">
+        <h2 id="chosenCallsign">CALLSIGN</h2>
+        <textarea id="packetDisplay"></textarea>
+    </div>
+    <button id="refreshData" class="callsignButton">REFRESH</button>
+
+    <script src="packets.js"></script>
 </body>
 
