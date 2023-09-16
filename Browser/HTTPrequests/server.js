@@ -63,15 +63,4 @@ async function clearData(){
     })
 }
 
-document.getElementById("restartRadio").addEventListener("click", restartRadio);
-async function restartRadio(){
-    await fetch(`https://${host}:5000/restart`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        } 
-    })
-}
-
 export { clearData, sendCallsign }
