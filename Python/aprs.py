@@ -99,10 +99,14 @@ testpacket = 'KE8VYZ>APWW11,WIDE1-1,WIDE2-1,qAR,WW8TF-15:@052118h4102.87N/08143.
 
 # turn on radio receiver
 # Popen("echo 'blacklist dvb_usb_rtl28xxu' | sudo tee --append /etc/modprobe.d/blacklist-dvb_usb_rtl28xxu.conf",shell=True)
-try:
-    proc = Popen('rtl_fm -f 144.39M - | direwolf -c sdr.conf -r 24000 -t 0 -D 1 -', stdout=PIPE, shell=True)
-except:
-    print("Radio not connected")
+startRadio()
+global proc
+def startRadio():
+    global proc
+    try:
+        proc = Popen('rtl_fm -f 144.39M - | direwolf -c sdr.conf -r 24000 -t 0 -D 1 -', stdout=PIPE, shell=True)
+    except:
+        print("Radio not connected")
     
 def debugRadio(raw):
     # print(raw)

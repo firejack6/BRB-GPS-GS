@@ -31,35 +31,28 @@ async function initGPS(){
 function createDivs(d){
     let callsigns = Object.keys(d);
     for(let i = 0; i<Object.keys(d).length;i++){
-        let callsignDiv = document.createElement("div");
-        callsignDiv.setAttribute("class","CSbuttonDIV");
+        let csOption = document.createElement("option");
+        csOption.value = callsigns[i];
+        csOption.innerText = callsigns[i]
 
-        let selection = document.createElement("button");
-        selection.id=callsigns[i];
-        selection.setAttribute("class", "callsignButton")
-        selection.innerText = callsigns[i]
-        
-        callsignDiv.appendChild(selection)
-        document.getElementById("callsigns").appendChild(callsignDiv)
-    }
-    let buttons = document.querySelectorAll(".callsignButton");
-    for(let i = 0; i<buttons.length;i++){
-        buttons[i].addEventListener("click", showPackets);
+        document.getElementById("callsignDropdown").add(csOption)
     }
 }
 
-function showPackets(e){
-    let cs = e.target.id;
+document.getElementById("callsignDropdown").addEventListener("change", function(){
+    let cs = document.getElementById("callsignDropdown").value;
     let csPackets = packets[cs];
 
     document.getElementById("chosenCallsign").innerText = cs;
     document.getElementById("packetDisplay").value = JSON.stringify(csPackets,null,2);
-}
+})
 
 document.getElementById("refreshData").addEventListener("click",function(){
-    let csButtonDivs = document.querySelectorAll(".CSbuttonDIV")
-    for(let i=0;i<csButtonDivs.length;i++){
-        csButtonDivs[i].remove()
+    let select = document.getElementById("callsignDropdown");
+    let oldOptions = select.options;
+    for(i=select.options.length-1;i>=1;i--){
+        select.remove(i)
     }
+
     initGPS();
 });

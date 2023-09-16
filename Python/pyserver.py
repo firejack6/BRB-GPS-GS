@@ -73,13 +73,15 @@ def clearJSON():
 @app.route("/restart", methods=['POST'])
 @cross_origin()
 def restartRadio():
-    shl = subprocess.Popen("lsusb",stdout=subprocess.PIPE,shell=True)
-    while True:
-        line = shl.stdout.readline()
-        if not line:
-            break
-        line=line.rstrip()
-        print(line)
+    # shl = subprocess.Popen("lsusb",stdout=subprocess.PIPE,shell=True)
+    # while True:
+    #     line = shl.stdout.readline()
+    #     if not line:
+    #         break
+    #     line=line.rstrip()
+    #     print(line)
+    
+    startRadio()
     
     return jsonify("RESTARTING")
     
