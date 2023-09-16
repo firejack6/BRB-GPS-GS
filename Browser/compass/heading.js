@@ -14,7 +14,7 @@ function requestOrientationPermission(){
   } else {
     window.addEventListener("deviceorientationabsolute", handler, true);
   }
-  setInterval(calculateHeading,1000)
+  setInterval(calculateHeading,100)
 }
 
 function iOS() {
@@ -82,7 +82,15 @@ function setVars(which,position){
 }
 
 function updateCompass(myhdg,rkthdg){
-  document.getElementById("rawHeading").innerHTML = rkthdg;
+  let displayHeading = myhdg-90;
+  if (displayHeading>360){
+    displayHeading=displayHeading-360;
+  }
+  if(displayHeading<0){
+    displayHeading=displayHeading+360;
+  }
+
+  document.getElementById("rawHeading").innerHTML = displayHeading.toFixed(0);
   document.getElementById("rocketCont").style.transform = "translate(-35%, -50%) rotate("+(360-myhdg)+"deg)";
   // document.getElementById("compassNorth").style.transform = "rotate("+(360-myhdg)+"deg)";
   document.getElementById("compassPNG").style.transform = "rotate("+(360-myBearing)+"deg)";

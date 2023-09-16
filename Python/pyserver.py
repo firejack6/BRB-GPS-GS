@@ -3,6 +3,9 @@ from flask_cors import CORS, cross_origin
 from time import sleep
 import json
 import subprocess
+from subprocess import PIPE,Popen
+# import pyusb
+import usb.core
 
 
 def setDefaultCallsign():
@@ -69,21 +72,6 @@ def clearJSON():
             ]
             }, json_file, indent=2)
     return jsonify("JSON cleared")
-
-@app.route("/restart", methods=['POST'])
-@cross_origin()
-def restartRadio():
-    # shl = subprocess.Popen("lsusb",stdout=subprocess.PIPE,shell=True)
-    # while True:
-    #     line = shl.stdout.readline()
-    #     if not line:
-    #         break
-    #     line=line.rstrip()
-    #     print(line)
-    
-    startRadio()
-    
-    return jsonify("RESTARTING")
     
 sslCertificate = "./secret/cert.env"
 sslKey = "./secret/key.env"
