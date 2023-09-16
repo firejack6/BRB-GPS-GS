@@ -1,16 +1,27 @@
 #map{
-  height: 75vh;
+  height: 50vh;
 }
 
 #settingsFrame{
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50vw;
-  top: 50vh;
+  top: 20vh;
   z-index: 1000;
   width: 50vw;
-  height: 50vh;
-  background-color: white;
+  height: fit-content;
+  border: 20px solid orange;
+  background-color: orange;
+}
+
+.settingsButton{
+  width: fit-content;
+  height: 10vh;
+  font-size: xx-large
+}
+
+#site{
+  font-size: xx-large;
 }
 
 .hidden{
@@ -62,10 +73,10 @@
   position: fixed;
   transform: translate(-50%, 50%);
   left: 50vw;
-  top: 10vh;
+  bottom: 15vh;
   width: 30vh;
   height: 30vh;
-  z-index: 1100;
+  z-index: 20;
 }
 
 #compassPNG{
@@ -112,6 +123,30 @@
   transform-origin: bottom;
   height: 100%;
   width: 0.5vh;
-  /* background-color: red; */
+  /* background-color: black; */
   transform: translateX(50%);
+}
+
+#headingCont{
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#rawHeading{
+  width: fit-content;
+  text-align: center;
+  background-color: whitesmoke;
+  border: 2px solid grey;
+}
+
+.multilineSpan{
+  white-space: pre;
+}
+
+#topRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

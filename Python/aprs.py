@@ -16,26 +16,34 @@ def handleSamples(pkt):
     except:
         # print(pkt)
         pass
+    
     try:
         packet=APRS.parse(pkt)
         print(packet)
+    except:
+        return
+    try:
         callsign = packet.source
         latitude = packet.latitude
         longitude = packet.longitude
         timestamp = packet.timestamp
+        altitude = packet.altitude
         if(timestamp == None):
             t=datetime.now()
             timestamp=t.strftime("%Y-%m-%d %H:%M:%S")
             print(timestamp)
+        if(altitude == None):
+            altitude = 0
         if (latitude): # only want location packets
-            packetToDict(callsign, latitude, longitude, timestamp)
+            packetToDict(callsign, latitude, longitude, timestamp, altitude)
     except:
         pass
 
-def packetToDict(callsign, latitude, longitude, timestamp):
+def packetToDict(callsign, latitude, longitude, timestamp, altitude):
     packetDict = {
         "latitude": latitude,
         "longitude": longitude,
+        "altitude": altitude,
         "timestamp": str(timestamp)
     }
     inst = callsignInstance(callsign)

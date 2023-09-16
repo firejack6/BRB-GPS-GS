@@ -9,46 +9,38 @@
         <script src="./Maps/protomaps/protomaps-leaflet.js"></script>
         <script src="./HTTPrequests/server.js" type="module"></script>
         <meta http-equiv="Cache-Control" content="private">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
     </head>
 
     <body>
+        <div id="topRow">
+            <div id="buttons">
+                <button id="settings" class="buttonClass">SETTINGS </button>
+                <button id="startCompass" class="buttonClass">ENABLE COMPASS</button>
+                <button id="restartRadio" class="buttonClass hidden">RESTART RADIO</button>
+            </div>
+            <h3>DISTANCE: <h3 id="distance"></h3></h3>
+
+            <h3>APRS Map <span id=displayCallsign>Callsign</span></h3>
+        </div>
         
-
-        <div id="buttons">
-            <button id="clearData" class="buttonClass">CLEAR DATA</button>
-            <button id="settings" class="buttonClass">SETTINGS </button>
-            <button id="startCompass" class="buttonClass">ENABLE COMPASS</button>
-            <button id="restartRadio" class="buttonClass">RESTART RADIO</button>
-            <h1>DISTANCE: <h1 id="distance"></h1></h1>
-        </div>
-
-        <div id="compassContainer">
-            <div id="compassCircle">
-                <img src="./compass/compass.png" id="compassPNG">
-            </div>
-            <div id="rocketCont" class="rotatable">
-                <div id="compassRocket"></div>
-            </div>
-            <div id="northCont">
-                <div id="compassNorth"></div>
-            </div>
-        </div>
-        <p id="rawHeading">00000</p>
-
-        <h1>APRS Map</h1>
         <div id="map" class=""></div>
         <div id="settingsFrame" class="hidden">
-            <div class="hidden">
-                <label for="ip">SERVER IP ADDRESS</label>
-                <input type="text" id="ip" name="ip" value="">
-                <button id="IPsubmit">SUBMIT</button>
+            <div style="display:flex;flex-direction:row;">
+            <button id="clearData" class="settingsButton">CLEAR DATA</button>
+
+                <div class="hidden">
+                    <label for="ip">SERVER IP ADDRESS</label>
+                    <input type="text" id="ip" name="ip" value="">
+                    <button id="IPsubmit" class="settingsButton">SUBMIT</button>
+                </div>
+                <div>
+                    <button id="callsign" class="settingsButton">SET CALLSIGN</button>
+                </div>
+                
+                <button class="settingsButton" id="rawpackets">VIEW RAW PACKETS</button>
             </div>
-            <div>
-                <label for="callsign">CALLSIGN</label>
-                <input type="text" id="callsign" name="callsign" value="">
-                <button id="callsignSubmit">SUBMIT</button>
-            </div>
-            
+
             <div>
                 <label for="site">Launch Site</label>
                 <select id="site">
@@ -60,7 +52,27 @@
                     <option value="AKRON">AKRON</option>
                 </select>
             </div>
+            
         </div>
+
+        
+
+        <div id="compassContainer">
+
+            <div id="compassCircle">
+                <img src="./compass/compass.png" id="compassPNG">
+            </div>
+            <div id="headingCont">
+                <p id="rawHeading">HDG</p>
+            </div>
+            <div id="rocketCont">
+                <div id="compassRocket"></div>
+            </div>
+            <div id="northCont">
+                <div id="compassNorth"></div>
+            </div>
+        </div>
+
     </body>
     <script src="main.js" type="module"></script>
     <script src="./Maps/mapping.js" type="module"> </script>

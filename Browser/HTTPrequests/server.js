@@ -1,7 +1,13 @@
 import { initialMarkers, appendMarker } from "../Maps/mapping.js";
 import { host } from "../main.js"
 import { desiredCallsign } from "../main.js";
-sendCallsign(desiredCallsign);
+
+window.addEventListener("load", () => {
+    sendCallsign(desiredCallsign);
+    initGPS();
+    setInterval(getGPS, 5000);
+})
+
 async function sendCallsign(callsign){
     await fetch(`https://${host}:5000`,{
         method: "POST",
@@ -19,7 +25,6 @@ async function sendCallsign(callsign){
     })
 }
 
-initGPS();
 async function initGPS(){
     await fetch(`https://${host}:5000/init`,{
         method: "GET",
@@ -34,7 +39,6 @@ async function initGPS(){
     })
 }
 
-setInterval(getGPS, 5000);
 async function getGPS(){
     await fetch(`https://${host}:5000/update`,{
         method: "GET",
@@ -70,4 +74,4 @@ async function restartRadio(){
     })
 }
 
-export { clearData }
+export { clearData, sendCallsign }

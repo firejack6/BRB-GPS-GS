@@ -1,5 +1,4 @@
-import { clearData } from "./HTTPrequests/server.js"
-import { changeLocation } from "./Maps/mapping.js";
+import { clearData, sendCallsign } from "./HTTPrequests/server.js"
 document.getElementById("clearData").addEventListener("click", function(){
     clearData();
 })
@@ -25,26 +24,37 @@ document.getElementById("IPsubmit").addEventListener("click", function(){
 
 export let desiredCallsign;
 desiredCallsign = localStorage["callsign"];
+document.getElementById("displayCallsign").innerText = desiredCallsign;
 if(!desiredCallsign){
     desiredCallsign = "N0CALL";
 }
-document.getElementById("callsignSubmit").addEventListener("click", function(){
-    desiredCallsign = document.getElementById("callsign").value;
+
+document.getElementById("callsign").addEventListener("click", function(){
+    desiredCallsign=prompt("CALLSIGN").toUpperCase()
     document.getElementById("settingsFrame").classList.toggle("hidden");
     localStorage["callsign"] = desiredCallsign;
-});
+    document.getElementById("displayCallsign").innerText = desiredCallsign;
+    sendCallsign(desiredCallsign)
+})
 
+export let site
 async function readCache(){
     if(localStorage["site"]){
         document.getElementById("site").value = localStorage["site"];
     } else {
         localStorage["site"] = "AKRON"
     }
+    site=localStorage["site"]
 }
 
 async function writeCache(){
     localStorage["site"] = document.getElementById("site").value;
 }
+
+document.getElementById("rawpackets").addEventListener("click", function(){
+    window.open(`https://${host}/rawpackets/rawPackets.html`);
+    document.getElementById("settingsFrame").classList.toggle("hidden");
+})
 
 export { writeCache, readCache }
 export { host }

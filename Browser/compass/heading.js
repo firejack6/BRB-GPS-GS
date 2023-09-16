@@ -1,44 +1,42 @@
 document.getElementById("startCompass").addEventListener("click", requestOrientationPermission);
 
-let myBearing;
 function requestOrientationPermission(){
-  try{
+  if (iOS()) {
     DeviceOrientationEvent.requestPermission()
-    .then(response => {
-        if (response == 'granted') {
-            window.addEventListener('deviceorientation', (e) => {
-              myBearing = e.alpha;
-              if (myBearing>180){
-                myBearing = myBearing-360;
-              }
-              // document.getElementById("rawHeading").innerHTML = e.alpha.toFixed(3)+180 + "°";
-            })
-            setInterval(calculateHeading,1000);
+      .then((response) => {
+        if (response === "granted") {
+          window.addEventListener("deviceorientation", handler, true);
+        } else {
+          alert("has to be allowed!");
         }
-    })
-    .catch(console.error)
-  } catch{
-    compassTesting = true;
-    myBearing = 0;
-    setInterval(fakeHeading,100);
-    setInterval(calculateHeading,100);
+      })
+      .catch(() => alert("not supported"));
+  } else {
+    window.addEventListener("deviceorientationabsolute", handler, true);
   }
+  setInterval(calculateHeading,1000)
 }
 
-let compassTesting = false;
-function fakeHeading(){
-  myBearing = myBearing + 10;
-  if(myBearing>360){
-    myBearing = 0;
-  }
+function iOS() {
+  return [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform)
+  // iPad on iOS 13 detection
+  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+
+let myBearing;
+function handler(e) {
+  myBearing = e.webkitCompassHeading || Math.abs(e.alpha - 360);
 }
 
 let myPositionR = {}, rocketPositionR = {};
 function calculateHeading(){
-  if(compassTesting){
-    rocketPosition = {latitude: 41.081, longitude: -81.519};
-    myPosition = {latitude: 41.085, longitude: -81.514};
-  }
   if(myPosition != undefined && rocketPosition != undefined){
     // to radians
     myPositionR.latitude = myPosition.latitude * Math.PI / 180;
@@ -50,8 +48,12 @@ function calculateHeading(){
     var y = Math.sin(rocketPositionR.longitude - myPositionR.longitude) * Math.cos(rocketPositionR.latitude);
     var x = Math.cos(myPositionR.latitude) * Math.sin(rocketPositionR.latitude) - Math.sin(myPositionR.latitude) * Math.cos(rocketPositionR.latitude) * Math.cos(rocketPositionR.longitude - myPositionR.longitude);
     var bearing = Math.atan2(y, x) * 180 / Math.PI; //direction we need to go, mybearing is the direction we're going
+
     var diffBearing = myBearing - bearing;
-    updateCompass(diffBearing, myBearing+90);
+
+    let rocketHeading = myBearing-diffBearing;
+
+    updateCompass(diffBearing, rocketHeading);
 
     //distance
     var R = 6371; // Radius of the earth in km
@@ -79,10 +81,11 @@ function setVars(which,position){
   }
 }
 
-function updateCompass(rkthdg,myhdg){
-  document.getElementById("rocketCont").style.setProperty("transform","translate(-35%, -50%) rotate("+rkthdg+"deg)");
-  document.getElementById("compassNorth").style.transform = "rotate("+myhdg+"deg)";
-  document.getElementById("compassPNG").style.transform = "rotate("+myhdg+"deg)";
+function updateCompass(myhdg,rkthdg){
+  document.getElementById("rawHeading").innerHTML = rkthdg;
+  document.getElementById("rocketCont").style.transform = "translate(-35%, -50%) rotate("+(360-myhdg)+"deg)";
+  // document.getElementById("compassNorth").style.transform = "rotate("+(360-myhdg)+"deg)";
+  document.getElementById("compassPNG").style.transform = "rotate("+(360-myBearing)+"deg)";
 }
 
 // add north

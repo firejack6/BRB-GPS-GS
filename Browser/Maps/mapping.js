@@ -1,50 +1,27 @@
 import { setVars  } from "../compass/heading.js";
 import { writeCache, readCache } from "../main.js";
-import { desiredCallsign } from "../main.js";
-let map;
+import { desiredCallsign, site } from "../main.js";
+let map,FARlayer,AKRONlayer,SPACEPORTlayer,AMHERSTlayer,MIDOHIOlayer,FARZ13WIDE,AMHERST13,SPACEPORT13,MIDOHIO13,AKRON13;
+var appendMarkerTO = true;
 window.addEventListener("load", function(){
-    readCache();
-
     //add base map
     map = L.map('map').setView(launchSiteCoords(), 12);
 
-    //add tiles
-    var FARlayer = protomapsL.leafletLayer({url:'./Maps/tiles/FAR.LG.pmtiles'});
-    FARlayer.addTo(map);
-    
-    var AKRONlayer = protomapsL.leafletLayer({url:'./Maps/tiles/AKRON.pmtiles'});
-    AKRONlayer.addTo(map);
-    
-    var SPACEPORTlayer = protomapsL.leafletLayer({url:'./Maps/tiles/SPACEPORT.pmtiles'});
-    SPACEPORTlayer.addTo(map);
-    
-    var AMHERSTlayer = protomapsL.leafletLayer({url:'./Maps/tiles/AMHERST.pmtiles'});
-    AMHERSTlayer.addTo(map);
-    
-    var MIDOHIOlayer = protomapsL.leafletLayer({url:'./Maps/tiles/MIDOHIO.pmtiles'});
-    MIDOHIOlayer.addTo(map);
-    
-    //add image overlays
-    var FARZ13WIDE = L.imageOverlay('./Maps/satellite/FAR.Z13.Wide.512.png', [[35.0659731379842, -117.3779296875],[35.7465122599185, -118.212890625]],{
-        opacity: 0.5
-    });
-    FARZ13WIDE.addTo(map);
-    
-    var AMHERST13 = L.imageOverlay('./Maps/satellite/Amherst.png', [[41.310824, -82.265625],[41.376808, -82.353516]],{
-        opacity: 0.6
-    });
-    AMHERST13.addTo(map);
-    
-    var SPACEPORT13 = L.imageOverlay('./Maps/satellite/Spaceport.png', [[32.916485, -106.831054],[32.990236, -106.962891]],{
-        opacity: 0.6
-    });
-    SPACEPORT13.addTo(map);
-    
-    var MIDOHIO = L.imageOverlay('./Maps/satellite/MidOhio.png', [[39.8085360414459, -83.583984375],[39.9097362345372, -83.7158203125]],{
-        opacity: 0.6
-    });
-    MIDOHIO.addTo(map);
-    
+    readCache();
+    createTiles();
+    createSatelliteImages();
+    changeLocation();
+    createMarkers();
+    this.setTimeout(() => {appendMarkerTO = false}, 10000)
+});
+
+document.getElementById("site").addEventListener("change", () => {
+    document.getElementById("settingsFrame").classList.add("hidden")
+    changeLocation();
+    writeCache();
+});
+
+function createMarkers(){
     //add markers
     var FARmarker = L.marker([35.34710258457093, -117.80807729650418],{
         title:"FAR",
@@ -70,13 +47,43 @@ window.addEventListener("load", function(){
         title:"MIDOHIO",
         icon: launchIcon
     }).addTo(map);
+}
 
-    document.getElementById("site").addEventListener("change", () => {
-        document.getElementById("settingsFrame").classList.add("hidden")
-        changeLocation();
-        writeCache();
+function createTiles(){
+    //create tile layers
+    FARlayer = protomapsL.leafletLayer({url:'./Maps/tiles/FAR.LG.pmtiles'});
+    
+    AKRONlayer = protomapsL.leafletLayer({url:'./Maps/tiles/AKRON.pmtiles'});
+    
+    SPACEPORTlayer = protomapsL.leafletLayer({url:'./Maps/tiles/SPACEPORT.pmtiles'});
+    
+    AMHERSTlayer = protomapsL.leafletLayer({url:'./Maps/tiles/AMHERST.pmtiles'});
+    
+    MIDOHIOlayer = protomapsL.leafletLayer({url:'./Maps/tiles/MIDOHIO.pmtiles'});
+}
+
+function createSatelliteImages(){
+    //create image overlays
+    FARZ13WIDE = L.imageOverlay('./Maps/satellite/FAR.Z13.Wide.512.png', [[35.0659731379842, -117.3779296875],[35.7465122599185, -118.212890625]],{
+        opacity: 0.5
     });
-});
+
+    AMHERST13 = L.imageOverlay('./Maps/satellite/Amherst.png', [[41.310824, -82.265625],[41.376808, -82.353516]],{
+        opacity: 0.6
+    });
+
+    SPACEPORT13 = L.imageOverlay('./Maps/satellite/Spaceport.png', [[32.916485, -106.831054],[32.990236, -106.962891]],{
+        opacity: 0.6
+    });
+
+    MIDOHIO13 = L.imageOverlay('./Maps/satellite/MidOhio.png', [[39.8085360414459, -83.583984375],[39.9097362345372, -83.7158203125]],{
+        opacity: 0.6
+    });
+
+    AKRON13 = L.imageOverlay("./Maps/satellite/Akron.png", [[41.0462168145206,-81.5625],[41.1786539723317,-81.38671875]],{
+        opacity: 0.6
+    });
+}
 
 //create icons
 var rocketIcon = L.icon({
@@ -108,22 +115,23 @@ export function initialMarkers(d){
         let cs = Object.keys(d)[i];
         if(cs != "N0CALL"){
             let data = d[cs][0]
-    
+            let alt = d.altitude;
             var marker = L.marker([data.latitude, data.longitude], {
                 title: cs,
                 icon: rocketIcon
             }).addTo(map);
         
-            marker.bindPopup(`<p> ${data.timestamp} </p>`)
+            // marker.bindPopup(`<p> ${cs} \n ${alt} \n ${data.timestamp} </p>`)
         }
     }
 }
 
-let oldData = {}
+let oldData = {};
 export function appendMarker(d){
     if(Object.keys(d)[0] == "N0CALL"){
         return
     }
+
     // discard duplicates
     let OLDcs = Object.keys(oldData)
     if(d[OLDcs]){
@@ -139,18 +147,24 @@ export function appendMarker(d){
         
         let cs = Object.keys(d)[0];
         let data = d[cs]
-    
+        
         var marker = L.marker([data.latitude, data.longitude], {
             title: cs
         }).addTo(map);
-    
-        marker.bindPopup(`<p> ${data.timestamp} </p>`)
+        
+        let alt = data.altitude;
+
+        if(appendMarkerTO){
+            marker.bindPopup(`<span class="multilineSpan"> ${cs} \n alt: ${alt} \n ${data.timestamp} </span>`)
+        } else {
+            marker.bindPopup(`<span class="multilineSpan"> ${cs} \n alt: ${alt} \n ${data.timestamp} </span>`)
             .openPopup();
+        }
         oldData = d;
     }   
 }
 
-setInterval(getDeviceLocation,10000);
+setInterval(getDeviceLocation,5000);
 function getDeviceLocation(){
     const options = {
         enableHighAccuracy: true,
@@ -184,6 +198,27 @@ function plotPosition(position){
 }
 
 function changeLocation(){
+    console.log(site)
+    if(site=="FAR"){
+        FARlayer.addTo(map)
+        FARZ13WIDE.addTo(map)
+    } else if (site=="AKRON"){
+        AKRONlayer.addTo(map)
+        AKRON13.addTo(map)
+    } else if (site=="SPACEPORT"){
+        SPACEPORTlayer.addTo(map)
+        SPACEPORT13.addTo(map)
+    } else if (site=="AMHERST"){
+        AMHERSTlayer.addTo(map)
+        AMHERST13.addTo(map)
+    } else if(site=="MIDOHIO") {
+        MIDOHIOlayer.addTo(map)
+        MIDOHIO13.addTo(map)
+    } else {
+        AKRONlayer.addTo(map)
+        AKRON13.addTo(map)
+    }
+
     map.panTo(launchSiteCoords())
 }
 
@@ -200,7 +235,7 @@ function launchSiteCoords(){
     }else if (site == "MIDOHIO"){
         return new L.latLng(39.86088459952167, -83.65579310291524)
     } else { // default to Akron
-        return new L.latLng(41.07591530951977, -81.51777788686735)
+        return new L.latLng(41.07594033555388, -81.51780126784678)
     }
 }
 
