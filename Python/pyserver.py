@@ -4,9 +4,6 @@ from time import sleep
 import json
 import subprocess
 from subprocess import PIPE,Popen
-# import pyusb
-import usb.core
-
 
 def setDefaultCallsign():
     with open("defaults.json", "r") as json_file:
