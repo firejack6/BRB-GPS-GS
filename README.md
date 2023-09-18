@@ -26,4 +26,4 @@ Apache2
 
 Requires SSL to get phone compass heading (generate key with openssl and place key.env and cert.env into secret folder)
 
-Simlink to /var/www/html/
+Symlink to /var/www/html/ and make sure home directory is owned by ubuntu:www-data
