@@ -14,16 +14,14 @@ PreRequisites:
 9. DNS server (optional, if you don't want to type an IP address into your browser) [Guide](https://ubuntu.com/server/docs/service-domain-name-service-dns)
 
 
-Python (use pip)
-bitstring
-aprspy
-flask
-flask-cors
+Installation Scripts
 
-
-
-Apache2
-
-Requires SSL to get phone compass heading (generate key with openssl and place key.env and cert.env into secret folder)
-
-Symlink to /var/www/html/ and make sure home directory is owned by ubuntu:www-data
+1. Connect to internet by editing /etc/netplan/*
+2. cd ~/
+3. git clone https://github.com/firejack6/BRB-GPS-GS.git
+4. cd ~/BRB-GPS-GS/Installation
+5. ./wifiDriver.sh (device will reboot)
+6. cd ~/BRB-GPS-GS/Installation
+7. ./install.sh (device will reboot)
+8. connect to aprspy wifi. Default password is "bigredbee"
+9. go to https://192.168.0.1/browser
