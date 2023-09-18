@@ -23,5 +23,7 @@ flask-cors
 
 
 Apache2
+
 Requires SSL to get phone compass heading (generate key with openssl and place key.env and cert.env into secret folder)
+
 Simlink to /var/www/html/
