@@ -1,8 +1,9 @@
 #!/bin/sh
+sudo apt update 
 cd ~/
-sudo apt install dkms git
+sudo apt install git network-manager
 sudo apt install build-essential libelf-dev linux-headers-$(uname -r)
-git clone https://github.com/aircrack-ng/rtl8812au.git
+git clone https://github.com/morrownr/8812au-20210629
 cd rtl88*
-sudo make dkms_install
+sudo sudo sh install-driver.sh
 sudo reboot

@@ -5,5 +5,1459 @@
       "longitude": 0,
       "timestamp": "2023-09-09 05:21:18"
     }
+  ],
+  "NEWBRY": [
+    {
+      "latitude": 41.464,
+      "longitude": -81.293667,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:43:58"
+    },
+    {
+      "latitude": 41.464,
+      "longitude": -81.293667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:12:10"
+    },
+    {
+      "latitude": 41.464,
+      "longitude": -81.293667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:37:26"
+    },
+    {
+      "latitude": 41.464,
+      "longitude": -81.293667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:03:40"
+    },
+    {
+      "latitude": 41.464,
+      "longitude": -81.293667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:31:36"
+    },
+    {
+      "latitude": 41.464,
+      "longitude": -81.293667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:00:53"
+    },
+    {
+      "latitude": 41.464,
+      "longitude": -81.293667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:55:42"
+    },
+    {
+      "latitude": 41.464,
+      "longitude": -81.293667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:49:48"
+    },
+    {
+      "latitude": 41.464,
+      "longitude": -81.293667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:16:23"
+    }
+  ],
+  "K8GPS-10": [
+    {
+      "latitude": 40.332167,
+      "longitude": -82.1405,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:44:00"
+    },
+    {
+      "latitude": 40.332167,
+      "longitude": -82.1405,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:59:00"
+    },
+    {
+      "latitude": 40.332167,
+      "longitude": -82.1405,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:14:00"
+    },
+    {
+      "latitude": 40.332167,
+      "longitude": -82.1405,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:14:00"
+    },
+    {
+      "latitude": 40.332167,
+      "longitude": -82.1405,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:15:00"
+    },
+    {
+      "latitude": 40.332167,
+      "longitude": -82.1405,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:30:00"
+    },
+    {
+      "latitude": 40.332167,
+      "longitude": -82.1405,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:15:00"
+    }
+  ],
+  "K8HSQ": [
+    {
+      "latitude": 40.8505,
+      "longitude": -81.509667,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:46:37"
+    },
+    {
+      "latitude": 40.8505,
+      "longitude": -81.509667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:46:39"
+    },
+    {
+      "latitude": 40.8505,
+      "longitude": -81.509667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:16:38"
+    },
+    {
+      "latitude": 40.8505,
+      "longitude": -81.509667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:46:40"
+    },
+    {
+      "latitude": 40.8505,
+      "longitude": -81.509667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:46:42"
+    },
+    {
+      "latitude": 40.8505,
+      "longitude": -81.509667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:16:45"
+    },
+    {
+      "latitude": 40.8505,
+      "longitude": -81.509667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:16:45"
+    }
+  ],
+  "NEWBRY-1": [
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:46:55"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:57:40"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:19:06"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:29:48"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:02:01"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:44:45"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:55:33"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:06:16"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:27:41"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:59:34"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:20:56"
+    },
+    {
+      "latitude": 41.463667,
+      "longitude": -81.296667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:31:35"
+    }
+  ],
+  "N8GD-2": [
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:50:41"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:18:46"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:40:26"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:49:06"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:08:54"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:26:26"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:48:34"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:50:52"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:30:13"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:39:00"
+    },
+    {
+      "latitude": 40.374,
+      "longitude": -80.702167,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:14:02"
+    }
+  ],
+  "KE8VYZ": [
+    {
+      "latitude": 41.075667,
+      "longitude": -81.512333,
+      "altitude": 0,
+      "timestamp": "2023-09-16 03:51:23"
+    },
+    {
+      "latitude": 41.075667,
+      "longitude": -81.512333,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:31:56"
+    },
+    {
+      "latitude": 41.075667,
+      "longitude": -81.512333,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:42:10"
+    }
+  ],
+  "W8KRF-1": [
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:52:09"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:22:10"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:07:14"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:22:16"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:37:18"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:52:18"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:22:19"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:07:25"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:22:25"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:37:25"
+    },
+    {
+      "latitude": 41.450667,
+      "longitude": -81.803,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:37:28"
+    }
+  ],
+  "VENEOC": [
+    {
+      "latitude": 41.449167,
+      "longitude": -79.677833,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:56:53"
+    },
+    {
+      "latitude": 89.58309,
+      "longitude": -100.294209,
+      "altitude": 598.01,
+      "timestamp": "2023-09-16 05:46:20"
+    },
+    {
+      "latitude": 89.58309,
+      "longitude": -100.294209,
+      "altitude": 598.01,
+      "timestamp": "2023-09-16 07:26:21"
+    }
+  ],
+  "N8LXY": [
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": null,
+      "timestamp": "2023-09-16 03:59:58"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:30:05"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:00:07"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:00:08"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:30:14"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:30:30"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:00:34"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:00:35"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:30:37"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:30:38"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:00:42"
+    },
+    {
+      "latitude": 41.413167,
+      "longitude": -81.936667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:30:45"
+    }
+  ],
+  "N8JLK-15": [
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686833,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:00:47"
+    },
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686833,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:45:47"
+    },
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686833,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:13:56"
+    }
+  ],
+  "K8YSE-1": [
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:02:18"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:31:21"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:32:47"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:00:25"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:29:28"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:31:56"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:58:32"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:31:05"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:56:39"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:25:42"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:30:15"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:54:45"
+    },
+    {
+      "latitude": 41.323667,
+      "longitude": -81.74,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:23:48"
+    }
+  ],
+  "N3SNN-1": [
+    {
+      "latitude": 41.48,
+      "longitude": -78.26,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:03:16"
+    },
+    {
+      "latitude": 41.48,
+      "longitude": -78.26,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:43:14"
+    },
+    {
+      "latitude": 41.48,
+      "longitude": -78.26,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:53:15"
+    },
+    {
+      "latitude": 41.48,
+      "longitude": -78.26,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:33:14"
+    },
+    {
+      "latitude": 41.48,
+      "longitude": -78.26,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:03:18"
+    },
+    {
+      "latitude": 41.48,
+      "longitude": -78.26,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:23:15"
+    },
+    {
+      "latitude": 41.48,
+      "longitude": -78.26,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:53:15"
+    },
+    {
+      "latitude": 41.48,
+      "longitude": -78.26,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:13:15"
+    },
+    {
+      "latitude": 41.48,
+      "longitude": -78.26,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:23:15"
+    }
+  ],
+  "NJ3T-3": [
+    {
+      "latitude": 40.226333,
+      "longitude": -79.101167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:03:34"
+    },
+    {
+      "latitude": 40.226333,
+      "longitude": -79.101167,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:03:33"
+    }
+  ],
+  "VE3SPR": [
+    {
+      "latitude": 42.0415,
+      "longitude": -82.605667,
+      "altitude": null,
+      "timestamp": "2023-08-16 04:05:00"
+    },
+    {
+      "latitude": 42.0415,
+      "longitude": -82.605667,
+      "altitude": null,
+      "timestamp": "2023-08-16 04:20:00"
+    },
+    {
+      "latitude": 42.0415,
+      "longitude": -82.605667,
+      "altitude": null,
+      "timestamp": "2023-08-16 04:35:00"
+    },
+    {
+      "latitude": 42.0415,
+      "longitude": -82.605667,
+      "altitude": null,
+      "timestamp": "2023-08-16 05:05:00"
+    },
+    {
+      "latitude": 42.0415,
+      "longitude": -82.605667,
+      "altitude": 0,
+      "timestamp": "2023-08-16 07:20:00"
+    },
+    {
+      "latitude": 42.0415,
+      "longitude": -82.605667,
+      "altitude": 0,
+      "timestamp": "2023-08-16 08:20:00"
+    }
+  ],
+  "NV8P-1": [
+    {
+      "latitude": 41.259167,
+      "longitude": -81.7255,
+      "altitude": 984,
+      "timestamp": "2023-09-16 04:05:34"
+    },
+    {
+      "latitude": 41.259167,
+      "longitude": -81.7255,
+      "altitude": 984,
+      "timestamp": "2023-09-16 05:05:35"
+    },
+    {
+      "latitude": 41.259167,
+      "longitude": -81.7255,
+      "altitude": 984,
+      "timestamp": "2023-09-16 06:05:33"
+    },
+    {
+      "latitude": 41.259167,
+      "longitude": -81.7255,
+      "altitude": 984,
+      "timestamp": "2023-09-16 06:35:33"
+    },
+    {
+      "latitude": 41.259167,
+      "longitude": -81.7255,
+      "altitude": 984,
+      "timestamp": "2023-09-16 07:05:33"
+    },
+    {
+      "latitude": 41.259167,
+      "longitude": -81.7255,
+      "altitude": 984,
+      "timestamp": "2023-09-16 07:05:35"
+    },
+    {
+      "latitude": 41.259167,
+      "longitude": -81.7255,
+      "altitude": 984,
+      "timestamp": "2023-09-16 07:35:35"
+    },
+    {
+      "latitude": 41.259167,
+      "longitude": -81.7255,
+      "altitude": 984,
+      "timestamp": "2023-09-16 08:35:36"
+    }
+  ],
+  "KB3KBR-7": [
+    {
+      "latitude": 41.408167,
+      "longitude": -79.709667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:06:07"
+    },
+    {
+      "latitude": 41.408167,
+      "longitude": -79.709667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:06:27"
+    }
+  ],
+  "WB8PIY-1": [
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:06:25"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:35:12"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:37:58"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:38:00"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:49:57"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:19:59"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:49:58"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:49:59"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:50:01"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:50:03"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:04:06"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:34:04"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:34:06"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:17:55"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:30:30"
+    },
+    {
+      "latitude": 41.444,
+      "longitude": -81.821,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:32:15"
+    }
+  ],
+  "N8JLK-7": [
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686833,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:07:55"
+    },
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686833,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:47:55"
+    }
+  ],
+  "RITTMN": [
+    {
+      "latitude": 40.9835,
+      "longitude": -81.793667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:08:49"
+    },
+    {
+      "latitude": 40.9835,
+      "longitude": -81.793667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:18:49"
+    },
+    {
+      "latitude": 40.9835,
+      "longitude": -81.793667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:18:48"
+    },
+    {
+      "latitude": 40.9835,
+      "longitude": -81.793667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:58:48"
+    },
+    {
+      "latitude": 40.9835,
+      "longitude": -81.793667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:28:48"
+    },
+    {
+      "latitude": 40.9835,
+      "longitude": -81.793667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:48:48"
+    }
+  ],
+  "N3TJJ-7": [
+    {
+      "latitude": 41.880333,
+      "longitude": -77.714,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:02:00"
+    }
+  ],
+  "N8HKO-3": [
+    {
+      "latitude": 40.522167,
+      "longitude": -83.2915,
+      "altitude": 993,
+      "timestamp": "2023-09-16 04:18:19"
+    },
+    {
+      "latitude": 40.522167,
+      "longitude": -83.2915,
+      "altitude": 993,
+      "timestamp": "2023-09-16 08:38:48"
+    }
+  ],
+  "W8JES": [
+    {
+      "latitude": 41.058,
+      "longitude": -83.644167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:19:19"
+    },
+    {
+      "latitude": 41.058,
+      "longitude": -83.644167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:28:18"
+    },
+    {
+      "latitude": 41.058,
+      "longitude": -83.644167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:46:18"
+    },
+    {
+      "latitude": 41.058,
+      "longitude": -83.644167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:55:17"
+    },
+    {
+      "latitude": 41.058,
+      "longitude": -83.644167,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:13:19"
+    },
+    {
+      "latitude": 41.058,
+      "longitude": -83.644167,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:19:18"
+    }
+  ],
+  "N3KTX-4": [
+    {
+      "latitude": 39.656333,
+      "longitude": -77.969333,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:19:27"
+    },
+    {
+      "latitude": 39.656333,
+      "longitude": -77.969333,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:19:27"
+    }
+  ],
+  "AKRON": [
+    {
+      "latitude": 41.067667,
+      "longitude": -81.5515,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:20:17"
+    },
+    {
+      "latitude": 41.067667,
+      "longitude": -81.5515,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:20:17"
+    },
+    {
+      "latitude": 41.067667,
+      "longitude": -81.5515,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:20:17"
+    },
+    {
+      "latitude": 41.067667,
+      "longitude": -81.5515,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:20:17"
+    }
+  ],
+  "WOOSTR": [
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:29:20"
+    },
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:49:20"
+    },
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:09:21"
+    },
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:29:20"
+    },
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:49:20"
+    },
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:09:21"
+    },
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:29:20"
+    },
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:49:20"
+    },
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:09:21"
+    },
+    {
+      "latitude": 40.7765,
+      "longitude": -81.889,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:49:19"
+    }
+  ],
+  "NJ3T-4": [
+    {
+      "latitude": 39.807,
+      "longitude": -79.172167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:29:42"
+    },
+    {
+      "latitude": 39.807,
+      "longitude": -79.172167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:49:45"
+    },
+    {
+      "latitude": 39.807,
+      "longitude": -79.172167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:59:47"
+    },
+    {
+      "latitude": 39.807,
+      "longitude": -79.172167,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:59:51"
+    },
+    {
+      "latitude": 39.807,
+      "longitude": -79.172167,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:29:46"
+    },
+    {
+      "latitude": 39.807,
+      "longitude": -79.172167,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:19:46"
+    },
+    {
+      "latitude": 39.807,
+      "longitude": -79.172167,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:49:45"
+    }
+  ],
+  "K3NQT": [
+    {
+      "latitude": 40.018,
+      "longitude": -78.513667,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:31:51"
+    }
+  ],
+  "N8TWM-1": [
+    {
+      "latitude": 40.767333,
+      "longitude": -82.523167,
+      "altitude": null,
+      "timestamp": "2023-09-15 04:32:22"
+    }
+  ],
+  "KE8LVA-10": [
+    {
+      "latitude": 40.7735,
+      "longitude": -82.0805,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:39:42"
+    }
+  ],
+  "KC2WBX-2": [
+    {
+      "latitude": 43.139167,
+      "longitude": -78.5605,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:42:00"
+    },
+    {
+      "latitude": 43.139167,
+      "longitude": -78.5605,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:02:00"
+    },
+    {
+      "latitude": 43.139167,
+      "longitude": -78.5605,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:12:00"
+    }
+  ],
+  "K8LGN-5": [
+    {
+      "latitude": 39.506667,
+      "longitude": -82.409833,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:46:35"
+    },
+    {
+      "latitude": 39.506667,
+      "longitude": -82.409833,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:10:13"
+    }
+  ],
+  "N8JLK-4": [
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:02:29"
+    },
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:32:29"
+    },
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:32:31"
+    },
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:32:37"
+    }
+  ],
+  "WB8ERJ-1": [
+    {
+      "latitude": 40.695167,
+      "longitude": -82.449919,
+      "altitude": 1.72,
+      "timestamp": "2023-09-16 05:02:33"
+    },
+    {
+      "latitude": 40.695167,
+      "longitude": -82.449919,
+      "altitude": 1.72,
+      "timestamp": "2023-09-16 07:02:31"
+    }
+  ],
+  "WA3HLC-2": [
+    {
+      "latitude": 41.874167,
+      "longitude": -78.0095,
+      "altitude": null,
+      "timestamp": "2023-09-16 04:49:00"
+    },
+    {
+      "latitude": 41.874167,
+      "longitude": -78.0095,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:39:00"
+    },
+    {
+      "latitude": 41.874167,
+      "longitude": -78.0095,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:59:00"
+    }
+  ],
+  "KB3KBR-1": [
+    {
+      "latitude": 41.408167,
+      "longitude": -79.709667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:41:10"
+    },
+    {
+      "latitude": 41.408167,
+      "longitude": -79.709667,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:56:10"
+    }
+  ],
+  "W8ALC": [
+    {
+      "latitude": 40.9805,
+      "longitude": -83.444833,
+      "altitude": null,
+      "timestamp": "2023-09-16 00:00:00"
+    },
+    {
+      "latitude": 40.9805,
+      "longitude": -83.444833,
+      "altitude": 0,
+      "timestamp": "2023-09-16 00:00:00"
+    },
+    {
+      "latitude": 40.9805,
+      "longitude": -83.444833,
+      "altitude": 0,
+      "timestamp": "2023-09-16 00:00:00"
+    }
+  ],
+  "N8GD-1": [
+    {
+      "latitude": 89.583329,
+      "longitude": -112.164735,
+      "altitude": 13.14,
+      "timestamp": "2023-09-16 05:42:21"
+    },
+    {
+      "latitude": 89.583329,
+      "longitude": -112.164735,
+      "altitude": 13.14,
+      "timestamp": "2023-09-16 06:56:36"
+    },
+    {
+      "latitude": 89.583329,
+      "longitude": -112.164735,
+      "altitude": 13.14,
+      "timestamp": "2023-09-16 08:00:01"
+    }
+  ],
+  "N8OZB": [
+    {
+      "latitude": 40.404833,
+      "longitude": -83.842833,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:45:40"
+    },
+    {
+      "latitude": 40.404833,
+      "longitude": -83.842833,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:49:46"
+    }
+  ],
+  "N8JLK-3": [
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686833,
+      "altitude": null,
+      "timestamp": "2023-09-16 05:54:22"
+    }
+  ],
+  "N8JLK-2": [
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686833,
+      "altitude": null,
+      "timestamp": "2023-09-16 06:00:07"
+    },
+    {
+      "latitude": 41.357833,
+      "longitude": -81.686833,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:30:12"
+    }
+  ],
+  "W8RID": [
+    {
+      "latitude": 41.338667,
+      "longitude": -81.450667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:09:24"
+    },
+    {
+      "latitude": 41.338667,
+      "longitude": -81.450667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:42:20"
+    },
+    {
+      "latitude": 41.338667,
+      "longitude": -81.450667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:57:21"
+    },
+    {
+      "latitude": 41.338667,
+      "longitude": -81.450667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:12:21"
+    }
+  ],
+  "VE3KSR": [
+    {
+      "latitude": 43.404333,
+      "longitude": -80.6335,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:33:02"
+    }
+  ],
+  "KD8SLG": [
+    {
+      "latitude": 40.794167,
+      "longitude": -81.792,
+      "altitude": 345,
+      "timestamp": "2023-09-16 06:42:12"
+    }
+  ],
+  "KD8SLG-1": [
+    {
+      "latitude": 40.793833,
+      "longitude": -81.792333,
+      "altitude": 349,
+      "timestamp": "2023-09-16 06:47:22"
+    },
+    {
+      "latitude": 40.793833,
+      "longitude": -81.792333,
+      "altitude": 349,
+      "timestamp": "2023-09-16 06:47:24"
+    }
+  ],
+  "W8QT-1": [
+    {
+      "latitude": 41.692,
+      "longitude": -81.046667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 06:51:38"
+    },
+    {
+      "latitude": 41.692,
+      "longitude": -81.046667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:21:32"
+    },
+    {
+      "latitude": 41.692,
+      "longitude": -81.046667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:51:33"
+    },
+    {
+      "latitude": 41.692,
+      "longitude": -81.046667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:21:32"
+    }
+  ],
+  "K8GPS-4": [
+    {
+      "latitude": 39.8635,
+      "longitude": -82.799,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:03:00"
+    },
+    {
+      "latitude": 39.8635,
+      "longitude": -82.799,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:53:00"
+    }
+  ],
+  "KD8SKZ-1": [
+    {
+      "latitude": 40.4295,
+      "longitude": -80.595333,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:06:18"
+    }
+  ],
+  "N8GD": [
+    {
+      "latitude": 40.384333,
+      "longitude": -80.717667,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:06:00"
+    }
+  ],
+  "AB8JL": [
+    {
+      "latitude": 40.846333,
+      "longitude": -81.528,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:19:51"
+    }
+  ],
+  "KE3JP-3": [
+    {
+      "latitude": 57.972971,
+      "longitude": -96.23906,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:22:57"
+    },
+    {
+      "latitude": 57.972971,
+      "longitude": -96.23906,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:32:58"
+    }
+  ],
+  "K3LAG": [
+    {
+      "latitude": 40.293833,
+      "longitude": -79.603333,
+      "altitude": 0,
+      "timestamp": "2023-09-16 07:48:57"
+    }
+  ],
+  "KC3PIB-10": [
+    {
+      "latitude": 40.412167,
+      "longitude": -80.012669,
+      "altitude": 0,
+      "timestamp": "2023-09-16 08:19:09"
+    }
   ]
 }

@@ -133,6 +133,9 @@ export function initialMarkers(d){
 }
 
 let oldData = {};
+var markerDict = {"data":[]};
+let markerCount = 0;
+var markerDictCS ={"data":[{"N0CALL":[{}]}]};
 export function appendMarker(d){
     if(Object.keys(d)[0] == "N0CALL"){
         return
@@ -147,18 +150,18 @@ export function appendMarker(d){
     }
     // plot new data
     else{
+        var marker = [];
         if(d[desiredCallsign]){
-            setVars("rocket",d[desiredCallsign])
+            setVars("rocket",d[desiredCallsign]);
             var icon = rocketIcon;
         } else {
             var icon = L.Marker.prototype.options.icon;
         }
         
         let cs = Object.keys(d)[0];
-        let data = d[cs]
+        let data = d[cs];
         
-
-        var marker = L.marker([data.latitude, data.longitude], {
+        marker = L.marker([data.latitude, data.longitude], {
             title: cs,
             icon: icon
         }).addTo(map);
@@ -175,6 +178,14 @@ export function appendMarker(d){
             marker.bindPopup(`<span class="multilineSpan"> ${cs} \n alt: ${alt} \n ${data.timestamp} </span>`)  
         }
         oldData = d;
+        var numPacket = String("mNum"+markerCount);
+        let packet = {};
+        packet[numPacket] = marker;
+        let oldvals = markerDict["data"];
+        oldvals.push(packet)
+        markerDict["data"]=oldvals
+        markerCount++;
+        console.log(markerDict["data"])
     }   
 }
 
@@ -206,13 +217,11 @@ function plotPosition(position){
             title: "My Position",
             icon: dotIcon
         }).addTo(map);
+        firstDevicePosition = false;
     }else{
         marker.setLatLng([position.coords.latitude, position.coords.longitude]);
     }
 }
-
-
-
 
 function changeLocation(){
     if(site=="FAR"){
