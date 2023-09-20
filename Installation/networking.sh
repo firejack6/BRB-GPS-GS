@@ -7,6 +7,6 @@ sudo nmcli connection modify $CON_NAME wifi-sec.key-mgmt wpa-psk
 sudo nmcli connection modify $CON_NAME wifi-sec.psk "bigredbee"
 sudo nmcli connection modify $CON_NAME ipv4.address "192.168.0.1/24"
 sudo nmcli connection up $CON_NAME
-sudo apt install isc-dhcp-server
+sudo apt install isc-dhcp-server -y
 sudo cp dhcpd.conf /etc/dhcp/dhcpd.conf
 sudo systemctl restart isc-dhcp-server
