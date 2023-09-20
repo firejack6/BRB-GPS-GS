@@ -1,0 +1,11 @@
+[Unit]
+Description=APRSPY
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+User=ubuntu
+Group=ubuntu
+ExecStart=/home/ubuntu/BRB-GPS-GS/Python/start.sh
+[Install]
+WantedBy=multi-user.target

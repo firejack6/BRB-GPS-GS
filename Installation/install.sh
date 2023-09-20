@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y git python3-pip cmake build-essential libusb-1.0-0-dev gcc g++ make libasound2-dev libudev-dev isc-dhcp-server network-manager
+sudo apt install -y git python3-pip cmake build-essential pkg-config libusb-1.0-0 libusb-1.0-0-dev gcc g++ make libasound2-dev libudev-dev isc-dhcp-server network-manager
 ./networking.sh
 cd ~
 git clone git://git.osmocom.org/rtl-sdr.git
@@ -23,7 +23,7 @@ make -j4
 sudo make install
 make install-conf
 cd ~/BRB-GPS-GS/Installation/
-./pythonDependencies.sh
+sh pythonDependencies.sh
 mkdir BRB-GPS-GS/Python/secret
 cd BRB-GPS-GS/Python/secret
 openssl req -x509 -newkey rsa:4096 -keyout key.env -out cert.env -sha256 -days 365 -nodes -subj "/C=US/ST=Ohio/L=Akron/O=Akronauts/OU=Org/CN=192.168.0.*"

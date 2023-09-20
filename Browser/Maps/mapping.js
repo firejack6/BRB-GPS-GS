@@ -185,7 +185,7 @@ export function appendMarker(d){
         oldvals.push(packet)
         markerDict["data"]=oldvals
         markerCount++;
-        console.log(markerDict["data"])
+        // console.log(markerDict["data"])
     }   
 }
 
