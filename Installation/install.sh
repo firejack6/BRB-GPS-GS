@@ -27,6 +27,7 @@ cd ~/BRB-GPS-GS/Installation/
 mkdir BRB-GPS-GS/Python/secret
 cd BRB-GPS-GS/Python/secret
 openssl req -x509 -newkey rsa:4096 -keyout key.env -out cert.env -sha256 -days 365 -nodes -subj "/C=US/ST=Ohio/L=Akron/O=Akronauts/OU=Org/CN=192.168.0.*"
+sudo sudo usermod -a -G www-data ubuntu
 sudo chown ~/ -R ubuntu:www-data
 ln -s ~/BRB-GPS-GS/Browser /var/www/html/browser
 sudo cp ~/BRB-GPS-GS/Installation/map.conf /etc/apache2/sites-available/
