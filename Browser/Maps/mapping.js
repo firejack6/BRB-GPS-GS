@@ -104,7 +104,7 @@ var zippyIcon = L.icon({
 
 var dotIcon = L.icon({
     iconUrl: './Maps/icons/reddot.webp',
-    iconSize: [10, 10],
+    iconSize: [30, 30],
 });
 
 

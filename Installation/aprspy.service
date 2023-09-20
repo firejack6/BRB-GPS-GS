@@ -4,8 +4,9 @@ After=multi-user.target
 [Service]
 Type=simple
 Restart=always
+RestartSec=1
 User=ubuntu
 Group=ubuntu
-ExecStart=/home/ubuntu/BRB-GPS-GS/Python/start.sh
+ExecStart=/usr/bin/python3 /home/ubuntu/BRB-GPS-GS/Python/aprs.py
 [Install]
 WantedBy=multi-user.target
