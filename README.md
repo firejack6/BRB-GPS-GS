@@ -3,7 +3,7 @@ Uses a Raspberry Pi (or similar) and an RTL-SDR to receive APRS packets, which c
 
 These instructions assume a [Le Potato single board computer](https://www.amazon.com/Libre-Computer-AML-S905X-CC-Potato-64-bit/dp/B074P6BNGZ?th=1) is being used 
 
-[Pre-Built Images](https://github.com/Drewsif/PiShrink)
+[Pre-Built Images](https://jacksonsserver.com/nextcloud/s/tQBpRGYzET7wtkd)
 
 
 
