@@ -3,6 +3,10 @@ Uses a Raspberry Pi (or similar) and an RTL-SDR to receive APRS packets, which c
 
 These instructions assume a [Le Potato single board computer](https://www.amazon.com/Libre-Computer-AML-S905X-CC-Potato-64-bit/dp/B074P6BNGZ?th=1) is being used 
 
+[Pre-Built Images](https://github.com/Drewsif/PiShrink)
+
+
+
 PreRequisites:
 1. [Ubuntu 22.04 Server](http://distro.libre.computer/ci/ubuntu/22.04/ubuntu-22.04.2-preinstalled-server-arm64%2Baml-s905x-cc.img.xz)
 2. [RTL-SDR v3](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
