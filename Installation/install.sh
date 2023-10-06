@@ -13,6 +13,7 @@ make
 sudo make install
 sudo ldconfig
 sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
+echo "blacklist dvb_usb_rtl28xxu" | sudo tee -a /etc/modprobe.d/blacklist.conf"
 cd ~
 git clone https://www.github.com/wb2osz/direwolf
 cd direwolf

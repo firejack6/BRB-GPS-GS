@@ -1,4 +1,3 @@
 https://opengeo.tech/maps/leaflet-gps/  follows your gps position
-python paths need to be fixed
-add tripoli mid ohio launch site
-add site selection
+multi tracking for two stage rockets
+connect points using paths
