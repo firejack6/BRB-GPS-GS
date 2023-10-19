@@ -81,7 +81,7 @@ function createSatelliteImages(){
         opacity: 0.6
     });
 
-    AKRON13 = L.imageOverlay("./Maps/satellite/Akron.webp", [[41.0130657870063,-81.5625],[41.2117215105479,-81.3427734375]],{
+    AKRON13 = L.imageOverlay("./Maps/satellite/Akron.webp", [[41.0130657870063, -81.5625],[41.2117215105479, -81.3427734375]],{
         opacity: 0.6
     });
 }

@@ -1,3 +1,3 @@
-https://opengeo.tech/maps/leaflet-gps/  follows your gps position
 multi tracking for two stage rockets
 connect points using paths
+allow custom coords for use with palette2.0
