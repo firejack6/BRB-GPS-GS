@@ -23,6 +23,7 @@ def index():
                     'email': 'clown@clowns.com'})
     
 @app.route('/', methods=['POST'])
+def receiveCallsign(): # callsign received from browser
     global callsignStorage
     name = request.json
     callsignStorage = name['callsign']
@@ -39,9 +40,9 @@ def initData():
         pass
     return jsonify("INIT FAILURE")
     
-@app.route('/update', methods=['GET'])
 @app.route('/update', methods=['POST']) 
 def sendData():
+    print(request.json)
     try:
         with open('aprs.json', 'r') as json_file:
             fulljson = json.load(json_file)
