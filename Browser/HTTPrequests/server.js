@@ -40,12 +40,15 @@ async function initGPS(){
 }
 
 async function getGPS(){
-    await fetch(`https://${host}:5000/update`,{
-        method: "GET",
+    await fetch(`http://${host}:5000/update`,{
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json"
-        }
+        },
+        body: JSON.stringify({
+            "callsign": desiredCallsign,
+        })
     })
     .then(res => res.json())
     .then(data => {

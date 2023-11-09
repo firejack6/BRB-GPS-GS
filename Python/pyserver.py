@@ -23,7 +23,6 @@ def index():
                     'email': 'clown@clowns.com'})
     
 @app.route('/', methods=['POST'])
-def receiveCallsign():
     global callsignStorage
     name = request.json
     callsignStorage = name['callsign']
@@ -41,6 +40,7 @@ def initData():
     return jsonify("INIT FAILURE")
     
 @app.route('/update', methods=['GET'])
+@app.route('/update', methods=['POST']) 
 def sendData():
     try:
         with open('aprs.json', 'r') as json_file:
@@ -79,3 +79,5 @@ def startServer():
     
 def updateCallsign():
     return callsignStorage
+
+startServer()

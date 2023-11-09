@@ -1,3 +1,5 @@
 multi tracking for two stage rockets
+    have server.js send wanted callsign for every request for every callsign 
+    have every brb report have incrementing id to make checking duplicates ez
 connect points using paths
 allow custom coords for use with palette2.0
