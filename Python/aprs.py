@@ -1,43 +1,23 @@
-import asyncio
-from aprspy import APRS # https://aprspy.readthedocs.io/en/latest/aprspy.html
 import json
-from pyserver import *
 import threading
-from time import sleep
-import sys
-from subprocess import PIPE,Popen
 from datetime import datetime
+from subprocess import PIPE, Popen
+from aprspy import APRS # https://aprspy.readthedocs.io/en/latest/aprspy.html
 
-def handleSamples(pkt):
-    try:
-        bktStart = pkt.index("[",0,3)
-        bktEnd = pkt.index("]",0,6)+2
-        pkt=pkt[bktEnd:-1]
-    except:
-        # print(pkt)
-        pass
-    
-    try:
-        packet=APRS.parse(pkt)
-        print(packet)
-    except:
-        return
-    try:
-        callsign = packet.source
-        latitude = packet.latitude
-        longitude = packet.longitude
-        timestamp = packet.timestamp
-        altitude = packet.altitude
-        if(timestamp == None):
-            t=datetime.now()
-            timestamp=t.strftime("%Y-%m-%d %H:%M:%S")
-            print(timestamp)
-        if(altitude == None):
-            altitude = 0
-        if (latitude): # only want location packets
-            packetToDict(callsign, latitude, longitude, timestamp, altitude)
-    except:
-        pass
+proc = Popen('rtl_fm -f 433.92M - | direwolf -c sdr.conf -r 24000 -t 0 -D 1 -', stdout=PIPE, shell=True)
+
+initJSON = open("/home/ubuntu/BRB-GPS-GS/Python/data.json", 'r')
+try:
+    dataDict = json.load(initJSON)
+    initJSON.close()
+except:
+    initJSON.close()
+    dFile = open("/home/ubuntu/BRB-GPS-GS/Python/data.json",'w')
+    json.dump({"N0CALL" : [{"latitude": 0,"longitude": 0,"timestamp": 0,"altitude": 0}]}, dFile, indent=2)
+    dFile.close()
+    initJSON = open('/home/ubuntu/BRB-GPS-GS/Python/data.json', 'r')
+    dataDict = json.load(initJSON)
+    initJSON.close()
 
 def packetToDict(callsign, latitude, longitude, timestamp, altitude):
     packetDict = {
@@ -46,77 +26,84 @@ def packetToDict(callsign, latitude, longitude, timestamp, altitude):
         "altitude": altitude,
         "timestamp": str(timestamp)
     }
-    inst = callsignInstance(callsign)
-    openJSON()
-    if (inst == 0):
-        loadedJSON[callsign] = [packetDict]
+
+
+    if callsign in dataDict:
+        dataDict[callsign].append(packetDict)
     else:
-        loadedJSON[callsign] += [packetDict]
-    writeToJSON(loadedJSON)
+        dataDict[callsign] = []
+        dataDict[callsign].append(packetDict)
 
-global loadedJSON
-loadedJSON={}
-def openJSON():
-    global loadedJSON
+    print(dataDict[callsign])
+    dFile = open('/home/ubuntu/BRB-GPS-GS/Python/data.json','w')
+    dFile.write(json.dumps(dataDict, indent=2))
+    dFile.close()
+
+
+def handleSamples(pkt):
     try:
-        with open('aprs.json', 'r') as json_file:
-            loadedJSON = json.load(json_file)
-    except:
-        pass
-        
-def writeToJSON(packet):
-    with open('aprs.json', 'w') as json_file:
-        json.dump(packet, json_file, indent=2)
-
-def callsignInstance(callsign):
-    try:
-        instance = len(loadedJSON[callsign])
-    except:
-        instance = 0
-    return instance
-
-openJSON()
-server = threading.Thread(target=startServer) 
-server.start()
-global callsign
-
-def printCall():
-    global callsign
-    callsign = updateCallsign()
-    # print(callsign)
-    if(callsign != "N0CALL"):
+        bktEnd = pkt.index("]",0,6)+2
+        pkt=pkt[bktEnd:-1]
+        print(pkt)
+    except Exception as e:
+        # print(e)
         return
-    else:
-        sleep(5)
-        printCall()
+
+    try:
+        processedPkt = APRS.parse(pkt)
+        print("PP: ",processedPkt)
+    except Exception as e:
+        print(e)
+        return
     
-timer = threading.Thread(target=printCall)
-timer.start()
-
-
-testpacket = 'KE8VYZ>APWW11,WIDE1-1,WIDE2-1,qAR,WW8TF-15:@052118h4102.87N/08143.73Wl349/015/A=001264APRS-IS for Win32'
-# handleSamples(testpacket)
-
-
-# turn on radio receiver
-# Popen("echo 'blacklist dvb_usb_rtl28xxu' | sudo tee --append /etc/modprobe.d/blacklist-dvb_usb_rtl28xxu.conf",shell=True)
-
-try:
-    proc = Popen('rtl_fm -f 144.39M - | direwolf -c sdr.conf -r 24000 -t 0 -D 1 -', stdout=PIPE, shell=True)
-except:
-    print("Radio not connected")
+    lat = processedPkt.latitude
+    long = processedPkt.longitude
+    callsign = processedPkt.source
+    timestamp = processedPkt.timestamp
+    altitude = processedPkt.altitude
+    if timestamp == None:
+        t=datetime.now()
+        timestamp=t.strftime("%Y-%m-%d %H:%M:%S")
+    if not altitude:
+        altitude = -1
+    packetToDict(callsign,lat,long,timestamp,altitude)
     
-def debugRadio(raw):
-    # print(raw)
-    f=open("testin.txt","a")
-    f.write(raw+"\n")
+
+
+
+
 
 while True:
-    line = proc.stdout.readline()
-    if line != '':
-        packet = str(line.rstrip())
-        if packet != "b''":
-            packet = packet[1:-1]
-            packet = packet[1:]
-            # debugRadio(packet)
-            handleSamples(packet)
+    raw=proc.stdout.readline()
+    if raw:
+        packet = str(raw.rstrip())[1:-1][1:]
+        handleSamples(packet)
+        
+
+
+
+
+
+
+
+
+# global proc
+# def startRTL():
+#     global proc
+#     try:
+#         proc = Popen('rtl_fm -f 433.92M - | direwolf -c sdr.conf -r 24000 -t 0 -D 1 -', stdout=PIPE, shell=True)
+#     except:
+#         print("Radio not connected")
+# rtlThread = threading.Thread(target=startRTL)
+# rtlThread.start()
+
+# def readPipe():
+#     global proc
+#     while True:
+#         line=proc.stdout.readline()
+#         lineDec = line.decode('utf-8')
+
+#         if lineDec:
+#             print(lineDec)
+
+# readPipe()

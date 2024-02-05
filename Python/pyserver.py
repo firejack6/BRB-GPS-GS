@@ -1,12 +1,11 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
-from time import sleep
 import json
-import subprocess
-from subprocess import PIPE,Popen
+from time import sleep
+
 
 def setDefaultCallsign():
-    with open("defaults.json", "r") as json_file:
+    with open("/home/ubuntu/BRB-GPS-GS/Python/defaults.json", "r") as json_file:
         defaults = json.load(json_file)
         callsign = defaults["callsign"]
     return callsign
@@ -21,7 +20,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 def index():
     return jsonify({'name': 'Clown',
                     'email': 'clown@clowns.com'})
-    
+
 @app.route('/', methods=['POST'])
 def receiveCallsign(): # callsign received from browser
     global callsignStorage
@@ -33,7 +32,7 @@ def receiveCallsign(): # callsign received from browser
 def initData():
     global savedJSON
     try:
-        with open('aprs.json', 'r') as json_file:
+        with open('/home/ubuntu/BRB-GPS-GS/Python/data.json', 'r') as json_file:
             savedJSON = json.load(json_file)
             return jsonify(savedJSON)
     except:
@@ -42,24 +41,25 @@ def initData():
     
 @app.route('/update', methods=['POST']) 
 def sendData():
-    print(request.json)
+    # print(request.json)
     try:
-        with open('aprs.json', 'r') as json_file:
+        with open('/home/ubuntu/BRB-GPS-GS/Python/data.json', 'r') as json_file:
             fulljson = json.load(json_file)
-            # print(callsignStorage)
             try:
                 latest = {callsignStorage:fulljson[callsignStorage][len(fulljson[callsignStorage])-1]}
+                print("LATEST: ",latest)
                 return jsonify(latest)
-            except:
+            except Exception as e:
+                print(e)
                 return jsonify({"N0CALL":fulljson["N0CALL"][0]})
-    except:
-        pass
+    except Exception as e:
+        print(e)
     return jsonify("SEND FAILURE")
     
 @app.route("/clear", methods=['POST'])
 @cross_origin()
 def clearJSON():
-    with open('aprs.json', 'w') as json_file:
+    with open('/home/ubuntu/BRB-GPS-GS/Python/data.json', 'w') as json_file:
         json.dump({
             "N0CALL": [
                 {
@@ -71,8 +71,9 @@ def clearJSON():
             }, json_file, indent=2)
     return jsonify("JSON cleared")
     
-sslCertificate = "./secret/cert.env"
-sslKey = "./secret/key.env"
+sslCertificate = "/home/ubuntu/BRB-GPS-GS/Python/secret/cert.env"
+sslKey = "/home/ubuntu/BRB-GPS-GS/Python/secret/key.env"
+
 def startServer():
     print("Starting server")
     app.run(host="0.0.0.0",ssl_context=(sslCertificate,sslKey),port=5000)
@@ -82,3 +83,17 @@ def updateCallsign():
     return callsignStorage
 
 startServer()
+
+
+
+
+
+
+
+
+
+
+
+
+
+

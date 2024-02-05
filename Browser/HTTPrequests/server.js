@@ -1,4 +1,4 @@
-import { initialMarkers, appendMarker } from "../Maps/mapping.js";
+import { initialMarkers, appendMarker, dispLatest } from "../Maps/mapping.js";
 import { host } from "../main.js"
 import { desiredCallsign } from "../main.js";
 
@@ -40,7 +40,7 @@ async function initGPS(){
 }
 
 async function getGPS(){
-    await fetch(`http://${host}:5000/update`,{
+    await fetch(`https://${host}:5000/update`,{
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -52,7 +52,9 @@ async function getGPS(){
     })
     .then(res => res.json())
     .then(data => {
+        console.log(data)
         appendMarker(data)
+        dispLatest(data)
     })
 }
 

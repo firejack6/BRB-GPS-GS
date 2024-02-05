@@ -1,0 +1,1045 @@
+Dire Wolf DEVELOPMENT version 1.8 A (Feb  3 2024)
+Includes optional support for:  cm108-ptt
+Reading config file sdr.conf
+Trying tocalls.yaml
+Trying data/tocalls.yaml
+Trying ../data/tocalls.yaml
+Trying /usr/local/share/direwolf/tocalls.yaml
+Audio input device for receive: stdin  (channel 0)
+Audio out device for transmit: null  (channel 0)
+Channel 0: 1200 baud, AFSK 1200 & 2200 Hz, A+, 24000 sample rate.
+Note: PTT not configured for channel 0. (OK if using VOX.)
+When using VOX, ensure that it adds very little delay (e.g. 10-20) milliseconds
+between the time that transmit audio ends and PTT is deactivated.
+For example, if using a SignaLink USB, turn the DLY control all the
+way counter clockwise.
+Using VOX built in to the radio is a VERY BAD idea.  This is intended
+for voice operation, with gaps in the sound, and typically has a delay of about a
+half second between the time the audio stops and the transmitter is turned off.
+When using APRS your transmiter will be sending a quiet carrier for
+about a half second after your packet ends.  This may interfere with the
+the next station to transmit.  This is being inconsiderate.
+If you are trying to use VOX with connected mode packet, expect
+frustration and disappointment.  Connected mode involves rapid responses
+which you will probably miss because your transmitter is still on when
+the response is being transmitted.
+Read the User Guide 'Transmit Timing' section for more details.
+Disabled AGW network client port.
+KE8VYZ-3 audio level = 74(15/15)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xf8\x9f\xb51<0x1f>\xcf\xed/\x93\xf9<0x7f>$\xeb\x9f<0x1d>\xcf\xbf-/A=175543-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 53506 m (175543 ft)
+\xeb\x9f<0x1d>\xcf\xbf--
+Dire Wolf DEVELOPMENT version 1.8 A (Feb  3 2024)
+Includes optional support for:  cm108-ptt
+Reading config file sdr.conf
+Trying tocalls.yaml
+Trying data/tocalls.yaml
+Trying ../data/tocalls.yaml
+Trying /usr/local/share/direwolf/tocalls.yaml
+Audio input device for receive: stdin  (channel 0)
+Audio out device for transmit: null  (channel 0)
+Channel 0: 1200 baud, AFSK 1200 & 2200 Hz, A+, 24000 sample rate.
+Note: PTT not configured for channel 0. (OK if using VOX.)
+When using VOX, ensure that it adds very little delay (e.g. 10-20) milliseconds
+between the time that transmit audio ends and PTT is deactivated.
+For example, if using a SignaLink USB, turn the DLY control all the
+way counter clockwise.
+Using VOX built in to the radio is a VERY BAD idea.  This is intended
+for voice operation, with gaps in the sound, and typically has a delay of about a
+half second between the time the audio stops and the transmitter is turned off.
+When using APRS your transmiter will be sending a quiet carrier for
+about a half second after your packet ends.  This may interfere with the
+the next station to transmit.  This is being inconsiderate.
+If you are trying to use VOX with connected mode packet, expect
+frustration and disappointment.  Connected mode involves rapid responses
+which you will probably miss because your transmitter is still on when
+the response is being transmitted.
+Read the User Guide 'Transmit Timing' section for more details.
+Disabled AGW network client port.
+Dire Wolf DEVELOPMENT version 1.8 A (Feb  3 2024)
+Includes optional support for:  cm108-ptt
+Reading config file sdr.conf
+Trying tocalls.yaml
+Trying data/tocalls.yaml
+Trying ../data/tocalls.yaml
+Trying /usr/local/share/direwolf/tocalls.yaml
+Audio input device for receive: stdin  (channel 0)
+Audio out device for transmit: null  (channel 0)
+Channel 0: 1200 baud, AFSK 1200 & 2200 Hz, A+, 24000 sample rate.
+Note: PTT not configured for channel 0. (OK if using VOX.)
+When using VOX, ensure that it adds very little delay (e.g. 10-20) milliseconds
+between the time that transmit audio ends and PTT is deactivated.
+For example, if using a SignaLink USB, turn the DLY control all the
+way counter clockwise.
+Using VOX built in to the radio is a VERY BAD idea.  This is intended
+for voice operation, with gaps in the sound, and typically has a delay of about a
+half second between the time the audio stops and the transmitter is turned off.
+When using APRS your transmiter will be sending a quiet carrier for
+about a half second after your packet ends.  This may interfere with the
+the next station to transmit.  This is being inconsiderate.
+If you are trying to use VOX with connected mode packet, expect
+frustration and disappointment.  Connected mode involves rapid responses
+which you will probably miss because your transmitter is still on when
+the response is being transmitted.
+Read the User Guide 'Transmit Timing' section for more details.
+Disabled AGW network client port.
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+Dire Wolf DEVELOPMENT version 1.8 A (Feb  3 2024)
+Includes optional support for:  cm108-ptt
+Reading config file sdr.conf
+Trying tocalls.yaml
+Trying data/tocalls.yaml
+Trying ../data/tocalls.yaml
+Trying /usr/local/share/direwolf/tocalls.yaml
+Audio input device for receive: stdin  (channel 0)
+Audio out device for transmit: null  (channel 0)
+Channel 0: 1200 baud, AFSK 1200 & 2200 Hz, A+, 24000 sample rate.
+Note: PTT not configured for channel 0. (OK if using VOX.)
+When using VOX, ensure that it adds very little delay (e.g. 10-20) milliseconds
+between the time that transmit audio ends and PTT is deactivated.
+For example, if using a SignaLink USB, turn the DLY control all the
+way counter clockwise.
+Using VOX built in to the radio is a VERY BAD idea.  This is intended
+for voice operation, with gaps in the sound, and typically has a delay of about a
+half second between the time the audio stops and the transmitter is turned off.
+When using APRS your transmiter will be sending a quiet carrier for
+about a half second after your packet ends.  This may interfere with the
+the next station to transmit.  This is being inconsiderate.
+If you are trying to use VOX with connected mode packet, expect
+frustration and disappointment.  Connected mode involves rapid responses
+which you will probably miss because your transmitter is still on when
+the response is being transmitted.
+Read the User Guide 'Transmit Timing' section for more details.
+Disabled AGW network client port.
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+QRT
+End of file on stdin.  Exiting.
+Dire Wolf DEVELOPMENT version 1.8 A (Feb  3 2024)
+Includes optional support for:  cm108-ptt
+Reading config file sdr.conf
+Trying tocalls.yaml
+Trying data/tocalls.yaml
+Trying ../data/tocalls.yaml
+Trying /usr/local/share/direwolf/tocalls.yaml
+Audio input device for receive: stdin  (channel 0)
+Audio out device for transmit: null  (channel 0)
+Channel 0: 1200 baud, AFSK 1200 & 2200 Hz, A+, 24000 sample rate.
+Note: PTT not configured for channel 0. (OK if using VOX.)
+When using VOX, ensure that it adds very little delay (e.g. 10-20) milliseconds
+between the time that transmit audio ends and PTT is deactivated.
+For example, if using a SignaLink USB, turn the DLY control all the
+way counter clockwise.
+Using VOX built in to the radio is a VERY BAD idea.  This is intended
+for voice operation, with gaps in the sound, and typically has a delay of about a
+half second between the time the audio stops and the transmitter is turned off.
+When using APRS your transmiter will be sending a quiet carrier for
+about a half second after your packet ends.  This may interfere with the
+the next station to transmit.  This is being inconsiderate.
+If you are trying to use VOX with connected mode packet, expect
+frustration and disappointment.  Connected mode involves rapid responses
+which you will probably miss because your transmitter is still on when
+the response is being transmitted.
+Read the User Guide 'Transmit Timing' section for more details.
+Disabled AGW network client port.
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+QRT
+End of file on stdin.  Exiting.
+Dire Wolf DEVELOPMENT version 1.8 A (Feb  3 2024)
+Includes optional support for:  cm108-ptt
+Reading config file sdr.conf
+Trying tocalls.yaml
+Trying data/tocalls.yaml
+Trying ../data/tocalls.yaml
+Trying /usr/local/share/direwolf/tocalls.yaml
+Audio input device for receive: stdin  (channel 0)
+Audio out device for transmit: null  (channel 0)
+Channel 0: 1200 baud, AFSK 1200 & 2200 Hz, A+, 24000 sample rate.
+Note: PTT not configured for channel 0. (OK if using VOX.)
+When using VOX, ensure that it adds very little delay (e.g. 10-20) milliseconds
+between the time that transmit audio ends and PTT is deactivated.
+For example, if using a SignaLink USB, turn the DLY control all the
+way counter clockwise.
+Using VOX built in to the radio is a VERY BAD idea.  This is intended
+for voice operation, with gaps in the sound, and typically has a delay of about a
+half second between the time the audio stops and the transmitter is turned off.
+When using APRS your transmiter will be sending a quiet carrier for
+about a half second after your packet ends.  This may interfere with the
+the next station to transmit.  This is being inconsiderate.
+If you are trying to use VOX with connected mode packet, expect
+frustration and disappointment.  Connected mode involves rapid responses
+which you will probably miss because your transmitter is still on when
+the response is being transmitted.
+Read the User Guide 'Transmit Timing' section for more details.
+Disabled AGW network client port.
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    _||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    _||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+QRT
+End of file on stdin.  Exiting.
+Dire Wolf DEVELOPMENT version 1.8 A (Feb  3 2024)
+Includes optional support for:  cm108-ptt
+Reading config file sdr.conf
+Trying tocalls.yaml
+Trying data/tocalls.yaml
+Trying ../data/tocalls.yaml
+Trying /usr/local/share/direwolf/tocalls.yaml
+Audio input device for receive: stdin  (channel 0)
+Audio out device for transmit: null  (channel 0)
+Channel 0: 1200 baud, AFSK 1200 & 2200 Hz, A+, 24000 sample rate.
+Note: PTT not configured for channel 0. (OK if using VOX.)
+When using VOX, ensure that it adds very little delay (e.g. 10-20) milliseconds
+between the time that transmit audio ends and PTT is deactivated.
+For example, if using a SignaLink USB, turn the DLY control all the
+way counter clockwise.
+Using VOX built in to the radio is a VERY BAD idea.  This is intended
+for voice operation, with gaps in the sound, and typically has a delay of about a
+half second between the time the audio stops and the transmitter is turned off.
+When using APRS your transmiter will be sending a quiet carrier for
+about a half second after your packet ends.  This may interfere with the
+the next station to transmit.  This is being inconsiderate.
+If you are trying to use VOX with connected mode packet, expect
+frustration and disappointment.  Connected mode involves rapid responses
+which you will probably miss because your transmitter is still on when
+the response is being transmitted.
+Read the User Guide 'Transmit Timing' section for more details.
+Disabled AGW network client port.
+KE8VYZ-3 audio level = 73(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+QRT
+End of file on stdin.  Exiting.
+Dire Wolf DEVELOPMENT version 1.8 A (Feb  3 2024)
+Includes optional support for:  cm108-ptt
+Reading config file sdr.conf
+Trying tocalls.yaml
+Trying data/tocalls.yaml
+Trying ../data/tocalls.yaml
+Trying /usr/local/share/direwolf/tocalls.yaml
+Audio input device for receive: stdin  (channel 0)
+Audio out device for transmit: null  (channel 0)
+Channel 0: 1200 baud, AFSK 1200 & 2200 Hz, A+, 24000 sample rate.
+Note: PTT not configured for channel 0. (OK if using VOX.)
+When using VOX, ensure that it adds very little delay (e.g. 10-20) milliseconds
+between the time that transmit audio ends and PTT is deactivated.
+For example, if using a SignaLink USB, turn the DLY control all the
+way counter clockwise.
+Using VOX built in to the radio is a VERY BAD idea.  This is intended
+for voice operation, with gaps in the sound, and typically has a delay of about a
+half second between the time the audio stops and the transmitter is turned off.
+When using APRS your transmiter will be sending a quiet carrier for
+about a half second after your packet ends.  This may interfere with the
+the next station to transmit.  This is being inconsiderate.
+If you are trying to use VOX with connected mode packet, expect
+frustration and disappointment.  Connected mode involves rapid responses
+which you will probably miss because your transmitter is still on when
+the response is being transmitted.
+Read the User Guide 'Transmit Timing' section for more details.
+Disabled AGW network client port.
+KE8VYZ-3 audio level = 74(15/14)    _|||||___
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/15)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    |||||||__
+[0.3] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-
+Invalid character in compressed latitude.  Must be in range of '!' to '{'.
+Invalid character in compressed longitude.  Must be in range of '!' to '{'.
+Invalid symbol table id for compressed position.
+Symbol code is not a printable character.
+Position, --no-symbol--, BigRedBee BeeLine GPS
+alt 3687 m (12097 ft)
+\xeb\xdf\xbf\xcf\xbf--
+KE8VYZ-3 audio level = 75(15/14)    ||||||___
+[0.2] KE8VYZ-3>APBL10,WIDE3-1,XNOPAT-8:!\xb1\xfc\x97\xbd\xb7\xbf\xdf\xed/\xd3\xfd<0x7f>d\xeb\xdf\xbf\xcf\xbf-/A=012097-

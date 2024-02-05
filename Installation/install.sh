@@ -36,6 +36,8 @@ sudo cp ~/BRB-GPS-GS/Installation/apache2.conf /etc/apache2
 sudo systemctl reload apache2
 sudo a2ensite map.conf
 sudo cp ~/BRB-GPS-GS/Installation/aprspy.service /etc/systemd/system/aprspy.service
+sudo cp ~/BRB-GPS-GS/Installation/aprsServer.service /etc/systemd/system/aprsServer.service
 sudo systemctl daemon-reload
 sudo systemctl enable aprspy.service
+sudo systemctl enable aprsServer.service
 sudo reboot

@@ -219,7 +219,12 @@ function plotPosition(position){
         }).addTo(map);
         firstDevicePosition = false;
     }else{
-        marker.setLatLng([position.coords.latitude, position.coords.longitude]);
+        try {
+            marker.setLatLng([position.coords.latitude, position.coords.longitude]);
+        }
+        catch {
+            
+        }
     }
 }
 
@@ -264,4 +269,8 @@ function launchSiteCoords(){
     }
 }
 
-export { changeLocation }
+function dispLatest(d) {
+    document.getElementById("latestPos").innerText = JSON.stringify(d)
+}
+
+export { changeLocation, dispLatest }
