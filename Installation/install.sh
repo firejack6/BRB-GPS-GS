@@ -4,7 +4,7 @@ sudo apt upgrade -y
 sudo apt install -y git python3-pip cmake build-essential pkg-config libusb-1.0-0 libusb-1.0-0-dev gcc g++ make libasound2-dev libudev-dev isc-dhcp-server network-manager
 ./networking.sh
 cd ~
-git clone git://git.osmocom.org/rtl-sdr.git
+git clone https://gitea.osmocom.org/sdr/rtl-sdr.git
 cd rtl-sdr/
 mkdir build
 cd build
